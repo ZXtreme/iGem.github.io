@@ -1,0 +1,82 @@
+nav {
+  .container {
+    background-image: url(../images/attributions-images/attbgc.jpg);
+
+    .pic {
+      font-size: 30px;
+      padding-top: 88px;
+      line-height: 50px;
+      filter: hue-rotate(140deg);
+    }
+  }
+}
+
+nav .container::after {
+  content: "";
+  display: inline-block;
+  width: 0%;
+  height: 0%;
+  background-color: rgba(176, 208, 211, 0.5);
+}
+
+article {
+  padding: 20px 0 100px;
+
+  a {
+    color: #007bff;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .judgingBox {
+    text-align: center;
+
+    a {
+      display: inline-block;
+      padding: 20px 40px;
+      border-radius: 20px;
+      color: rgb(204, 170, 165);
+      border: 2px solid rgb(204, 170, 165);
+    }
+
+  }
+
+  h2 {
+    text-align: center;
+    line-height: 36px;
+    margin: 60px 0 20px;
+  }
+
+  .criteria {
+
+
+    table {
+      width: 80%;
+      margin: 0 auto;
+      border-collapse: separate;
+      border-spacing: 0;
+      border-top: 2px solid #000;
+      border-left: 2px solid #000;
+      font-size: 16px;
+    }
+
+    td:nth-child(1) {
+      background-color: rgb(224, 223, 223);
+    }
+
+    tr:nth-child(1) td {
+      background-color: rgb(209, 209, 210);
+    }
+
+
+    td {
+      text-align: center;
+      padding: 2px 5px;
+      border-right: 2px solid #000;
+      border-bottom: 2px solid #000;
+    }
+
+  }
+}

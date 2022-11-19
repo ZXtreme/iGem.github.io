@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Result</title>
+  <link rel="stylesheet" href="../css/public.css">
+  <link rel="stylesheet" href="../css/wave.css">
+  <link rel="stylesheet" href="../css/result.css">
+</head>
+<body>
+  <!-- loading 动画 -->
+  <div class="loading-out">
+    <div class="loading-fade-in">
+        <div class="loading-container">
+            <div class="one common"></div>
+            <div class="two common"></div>
+            <div class="three common"></div>
+            <div class="four common"></div>
+            <div class="five common"></div>
+            <div class="six common"></div>
+            <div class="seven common"></div>
+            <div class="eight common"></div>
+        </div>
+    </div>
+  </div>
+  
+  <!-- 头部 -->
+  <header>
+    <ul>
+        <li><a href="../index.html">HOME</a></li>
+        <li><a href="#">TEAM</a>
+            <dl>
+                <dd><a href="../html/member.html">Members</a></dd>
+                <dd><a href="../html/attributions.html">Attributions</a></dd>
+                <dd><a href="../html/collaborations.html">Collaboration</a></dd>
+                <dd><a href="../html/partnership.html">Partnership</a></dd>
+            </dl>
+        </li>
+        <li><a href="#">PROJECT</a>
+            <dl>
+                <dd><a href="../html/description.html">Description</a></dd>
+                <dd><a href="../html/contribution.html">Contributions</a></dd>
+                <dd><a href="../html/proof-of-concept.html">Proof of Concept</a></dd>
+                <dd><a href="../html/implementation.html">Implementation</a></dd>
+                <dd><a href="../html/parts.html">Parts</a></dd>
+                <dd><a href="../html/notebook.html">Notebook</a></dd>
+            </dl>
+        </li>
+        <li><a href="#">LAB</a>
+            <dl>
+                <dd><a href="../html/result.html">Result</a></dd>
+                <dd><a href="../html/engineering.html">Engineering</a></dd>
+                <dd><a href="../html/model.html">Modeling</a></dd>
+            </dl>
+        </li>
+        <li><a href="../html/safety.html">SAFETY</a></li>
+        <li><a href="#">HUMAN PRACTICE</a>
+            <dl>
+                <dd><a href="../html/overview.html">Overview</a></dd>
+                <dd><a href="../html/human-practices.html">Intergrated Human Practice</a></dd>
+                <dd><a href="../html/communication.html">Education & Communication</a></dd>
+                <dd><a href="../html/sustainable.html">Sustainable</a></dd>
+            </dl>
+        </li>
+        <li><a href="../html/judging.html">JUDGING</a></li>
+    </ul>
+</header>
+
+  <!-- 滚动条 -->
+  <div class="scrollBar">
+    <div class="back">BACK</div>
+    <div class="bar">
+        <img class="lazyload" data-src="../images/main-images/main1.png" alt="">
+    </div>
+  </div>
+
+  <nav>
+    <div class="container">
+        <a href="../index.html"><img class="lazyload" data-src="../images/main-images/logo.png" alt=""></a>
+        <span class="pic">Result</span>
+    </div> 
+  </nav>
+  <div class="wave"></div>
+  
+  <div class="steps">
+    <h4>Ⅰ Overview</h4>
+    <h4>Ⅱ Promoter screening</h4>
+    <h4>Ⅲ PTS mutation</h4>
+    <h4>Ⅳ Dynamic regulation</h4>
+    <h4>Ⅴ Dowmstream-dyeing</h4>
+  </div>
+
+  <article>
+    <div class="iframe0">
+      <p>In this section, we present all the experimental works performed during our iGEM year. <br>Through preliminary design and engineering, we have obtained ideal experimental results. After engineering, we also demonstrated our engineering success more completely. We start here with the result of promoter screening and <em>PTS</em> mutation; dyeing and visualization are presented thereafter(Fig.1).</p>
+      <div class="oneimg">
+        <img class="lazyload" data-src="../images/result-images/overview-fig1-min.png" alt="">
+        <h5>Fig. 1 Experiment construction of FUNCDYES.</h5>
+      </div>
+    </div>
+
+    <div class="iframe1">
+      <h2>1. Characterization of Fluorescence Intensity</h2>
+      <div class="exp">
+        <h3>(1) Purpose of the experiments</h3>
+        <p>In order to screen according to the transcriptional intensity of the promoter, we first selected EGFP (enhanced green fluorescent protein) as the reporter gene. By detecting the EGFP fluorescence and optical density at 600 nm (OD<sub>600</sub>), the promoter activity can be preliminarily and intuitively judged.</p>
+        <h3>(2) Experiments</h3>
+        <h4>• Shaker Flask Cultivations</h4>
+        <p>The engineered yeast 2OZPP which had the ability to express the lycopene synthetic genes from <em>Corynebacterium glutamicum</em> ATCC13032 with the P<sub><em>AOX1</em></sub> promoter was first inoculated into 10 mL of BMGY medium in a 50 mL Erlenmeyer flask. The cells were grown overnight at 30°C with shaking at 250 rpm. Then, the main cultures were inoculated into a 250 mL Erlenmeyer flask, containing 25 mL of BMMY medium (yeast extract 1%, peptone 2%, YNB 1.34%, potassium phosphate (pH 6.0) 100 mM, and methanol 1%) with an initial OD600 of 1 and cultured in a shaking incubator under the same conditions for 120 h. 1% (v/v) fresh methanol was added each every 24 h. Samples were taken every 24h to measure the OD600 of the fermentation broth and the fluorescence of the supernatant.</p>
+        <h4>• Fluorescence Detection of EGFP</h4>
+        <p>For the samples taken after each 24h of fermentation, we conducted the following experimental operations. Add 300 μL Tris-HCl buffer, wash the yeast strain by vortex shaking, centrifuge at 8000 R/min and 4℃ for 1 min to remove the supernatant. Repeat this process three times. After the last washing, resuspend the yeast strain with an appropriate amount of Tris-HCl buffer. Take the same volume of yeast suspension three times in parallel to detect the fluorescence intensity (excitation wavelength 488 nm, emission wavelength 520 nm), and determine the EGFP fluorescence and optical density at 600 nm (OD600).</p>
+        <h3>(3) Results and discussion</h3>
+        <p>After quantifying fluorescence using the microplate reader and measuring od at 600nm, we preliminarily ranked the promoter strength according to the fluorescence per OD (Fig.1). The order of the promoters from strong to weak is: P<sub><em>DAS2</em></sub>, P<sub><em>AOX1</em></sub>, P<sub><em>0547</em></sub>, P<sub><em>GAP</em></sub>, P<sub><em>PET9</em></sub>, P<sub><em>ACC1</em></sub>, P<sub><em>PGK1</em></sub>, P<sub><em>ERG9</em></sub>. Overall, among the promoters we selected, the strength of methanol inducible promoters is generally greater than that of constitutive promoters, among which P<sub><em>DAS2</em></sub> and P<sub><em>AOX1</em></sub> are inducible promoters, and the others are constitutive promoters. To our delight, <em>Pichia pastoris</em> strain with P<sub><em>DAS2</em></sub> has stronger transcription intensity. The above results also paved the way for us to replace <em>EGFP</em> gene in <em>P.pastoris</em> genome with <em>PTS</em> gene in the future. </p>
+        <div class="oneimg">
+          <img class="lazyload" data-src="../images/contribution-images/fluorescence.jpg" alt="">
+          <h5>Fig.1 Fluorescence per OD of different promoters within 120 hours.</h5>
+        </div>
+      </div>
+      <h2>2. The Analysis of Lycopene and Patchoulol</h2>
+      <h3>(1) Purpose of the experiments</h3>
+      <p>The strength of the promoter can be characterized by detecting the fluorescence of green fluorescent protein, but ultimately, we need to analyze the terpenoid production of engineering yeast co-expressing patchoulol and lycopene, and we hope to get the data that there is a trend of inverse relationship between the production of these two terpenoids through analysis. Because patchoulol is volatile and can be extracted to the outside by n-dodecane, we chose gas chromatography to quantify the yield of patchoulol. Lycopene will remain in cells after synthesis and is not volatile, so we chose high performance liquid chromatography to quantify the yield of lycopene.</p>
+      <h3>(2) Experiments</h3>
+      <h4>• Shaker Flask Cultivations</h4>
+      <p>The engineered yeast cells were first inoculated into 10 mL of BMGY medium in a 50 mL Erlenmeyer flask. The cells were grown overnight at 30°C with shaking at 250 rpm. Then, the main cultures were inoculated into a 250 mL Erlenmeyer flask, containing 25 mL of BMMY medium (yeast extract 1%, peptone 2%, YNB 1.34%, biotin 0.00004%, potassium phosphate (pH 6.0) 100 mM, and methanol 1%) with an initial OD600 of 1 and cultured in a shaking incubator under the same conditions for 120 h. 1% (v/v) fresh methanol was added each every 24 h<sup>[1]</sup>.</p>
+      <h4>• Analysis of Terpenoids</h4>
+      <p>The quantification of lycopene was performed on a Waters 2695 series HPLC system (Waters Technologies, Milford, MA, USA) equipped with Waters C18 column (4.6 mm×250 mm) and UV/VIS detector detected signals at 450 nm (Fig.2). For separation, samples were eluted with an isocratic elution program acetonitrile-isopropanol-methanol (50:20:30 v/v) at a flow rate of 1 mL/min at 40°C. The injection volume was set to 10 μL<sup>[1]</sup>.</p>
+      <div class="oneimg">
+        <img class="lazyload" data-src="../images/result-images/promoter-fig-2-min.png" alt="">
+        <h5>Fig.2 High performance liquid chromatogram of lycopene.</h5>
+      </div>
+      <p>The quantification of patchoulol was performed on a GC system (Agilent 7820 a, USA) equipped with HP-5 column (30 m×0.25 mm, 0.25μM U.M film thickness) and a flame ionization detector (FID). The oven temperature shall be kept at 90℃ for 0.5 min, then gradually increased to 120℃ at the speed of 20℃/ min, then increased to 160℃ at the speed of 3℃/ min for 5 min, and finally increased to 250℃ at the speed of 20℃/ min for 10 min. Patchoulol was quantified by external standard method (Fig.3).</p>
+      <div class="oneimg">
+        <img class="lazyload" data-src="../images/result-images/promoter-fig-3-min.jpg" alt="">
+        <h5>Fig.3 Gas chromatogram of patchoulol.</h5>
+      </div>
+      <h4>• The standard curve</h4>
+      <p>By extracting lycopene standard, we obtained the standard mother liquor with a concentration of 200 μg/ml, respectively carry out a series of gradient dilutions on the standard mother liquor, and then determine the relationship between the absorption peak of the standard and the concentration of the standard according to the HPLC isocratic elution method<sup>[1]</sup>. Fit the linear regression equation y=71782x-587086, R<sup>2</sup> = 0.9976, Y represents the peak area, X represents the concentration of the standard lycopene (Fig.4).</p>
+      <div class="oneimg">
+        <img class="lazyload" data-src="../images/result-images/promoter-fig-4-min.png" alt="">
+        <h5>Fig.4 The standard curve of lycopene.</h5>
+      </div>
+      <p>Weigh 0.5mg of patchoulol standard with an analytical balance and dissolve it in 5ml of n-dodecane. Volume it to 5ml with a volumetric flask. The concentration of the standard mother liquor is 1g / L; Dilute the standard mother liquor to 0.75g/l, 0.75g/l, 0.5g/l, 0.25g/l and 0.1g/l, and then determine the relationship between the absorption peak of the standard and the concentration of the standard according to the GC method. Fit the linear regression equation y=3×10<sup>7</sup>-556362, R<sup>2</sup> = 0.9995, Y represents the peak area, X represents the concentration of the standard patchoulol (Fig.5).</p>
+      <div class="oneimg">
+        <img class="lazyload" data-src="../images/result-images/promoter-fig-5-min.png" alt="">
+        <h5>Fig.5 The standard curve of patchoulol.</h5>
+      </div>
+      <h3>(3) Results and discussion</h3>
+      <h4>• Production and Titers</h4>
+      <p>Through quantitative analysis by GC and HPLC, we obtained the production and titer of patchoulol and lycopene of the engineered yeast transformants corresponding to different promoters. It can be intuitively found that in the inducible promoter, the production of lycopene and patchoulol of P<sub><em>DAS2</em></sub> is the highest, and in the constitutive promoter, the production of lycopene and patchoulol of P<sub><em>PET9</em></sub> is the highest, followed by P<sub><em>GAP</em></sub> (Fig.6&7). It is worth mentioning that because the data related to the production and titer of patchoulol on the promoter P<sub><em>DAS2</em></sub> fluctuated greatly during the previous experiment and there was data loss, the quality of the data of P<sub><em>DAS2</em></sub> was not good.</p>
+      <div class="twoimg">
+        <img class="lazyload" data-src="../images/proof-of-concept-images/lpbar.jpg" alt=""><img class="lazyload" data-src="../images/result-images/promoter-fig-7-min.jpg" alt="">
+        <h5>Fig.6 The production of two terpenoids(left)<br>Fig.7 The titer of two terpenoids(right)</h5>
+      </div>
+      <h4>• The Selection of Promoters</h4>
+      <p>However, since our main goal is not only to achieve high production of lycopene and patchoulol at the same time, we also hope to reduce the by-products in the synthesis of patchoulol, which requires us to mutate and find suitable <em>PTS</em> genes using a quick screening method. </p>
+      <p>As mentioned in the project design, since the two terpenoids share the same precursor FPP, the promoters corresponding to the strains that make the production of lycopene and patchoulol inversely proportional to each other are particularly important in the subsequent visual screening experiments, and they can be used for the preliminary screening of PTS mutants. And we found that the production of lycopene and patchoulol of the engineering yeast strains corresponding to the promoters P<sub><em>0547</em></sub> and P<sub><em>PGK1</em></sub> tended to be inversely proportional (Fig.8&9). </p>
+      <div class="oneimg">
+        <img class="lazyload" data-src="../images/proof-of-concept-images/ppgk1.jpg" alt="">
+        <h5>Fig.8 Lycopene and patchoulol titer of yeast transformants corresponding to P<sub><em>PGK1</em></sub>. The lycopene production of P<sub><em>PGK1</em></sub>-1, P<sub><em>PGK1</em></sub>-2 and P<sub><em>PGK1</em></sub>-3 was 177 mg/L (15.63mg/g DCW), 194.75 mg/L (17.70mg/g DCW) and 199.95 mg/L (18.18 mg/g DCW), and the patchoulol production of P<sub><em>PGK1</em></sub>-1, P<sub><em>PGK1</em></sub>-2 and P<sub><em>PGK1</em></sub>-3 was 4.77mg/L (0.525mg/g DCW), 3.95 mg/L (0.448mg/g DCW) and 3.02 mg/L (0.343 mg/g DCW).</h5>
+      </div>
+      <div class="oneimg">
+        <img class="lazyload" data-src="../images/proof-of-concept-images/p0547.jpg" alt="">
+        <h5>Fig.9 Lycopene and patchoulol titer of yeast transformants corresponding to P<sub><em>0547</em></sub>. The lycopene production of P<sub><em>0547</em></sub>-2, P<sub><em>0547</em></sub>-3 and P<sub><em>0547</em></sub>-4 was 158.69 mg/L (14.43mg/g DCW), 208.58 mg/L (19.17mg/g DCW) and 204.3 mg/L (18.07 mg/g DCW), and the patchoulol production of P<sub><em>0547</em></sub>-2, P<sub><em>0547</em></sub>-3 and P<sub><em>0547</em></sub>-4 was 5.10mg/L (0.580mg/g DCW), 3.76 mg/L (0.437mg/g DCW) and 4.02 mg/L (0.427 mg/g DCW). </h5>
+      </div>
+      <p>Previous studies have shown that color complementary analysis is a simple and effective method to identify genes in the terpenoid biosynthesis pathway[2]. Therefore, we performed color complementation analysis on P<sub><em>0547</em></sub>-2, P<sub><em>0547</em></sub>-3, P<sub><em>0547</em></sub>-4, P<sub><em>PGK1</em></sub>-1, P<sub><em>PGK1</em></sub>-2 and P<sub><em>PGK1</em></sub>-3. 2OZPP yeast was used as the control group, and six engineered 2OZPP yeast transformants containing PTS synthesis pathway and different upstream promoters were used as the experimental group. The experimental results can be well distinguished by the naked eye from the color complementation of different yeast transformants (Fig.10), which has well proved that it is feasible to screen PTS mutants by visualized color complementation analysis.</p>
+      <div class="oneimg">
+        <img class="lazyload" data-src="../images/proof-of-concept-images/experience.jpg" alt="" style="width:30%;">
+        <h5>Fig.10 Identification of two terpenoids in color complementation experiments. Blue represents the production of patchoulol, and red represents the production of lycopene</h5>
+      </div>
+      <h4>• Growth</h4>
+      <p>FPP is a precursor for some other components of cell membrane in <em>P.pastoris</em>, such as ergosterol and farnesyl. By comparing the growth curves of <em>P.pastoris</em> corresponding to the promoters, we speculate that too strong promoter strength may affect the growth of the strains at the early stage of fermentation (Fig.11).</p>
+      <div class="oneimg">
+        <img class="lazyload" data-src="../images/result-images/promoter-fig-11-min.jpg" alt="">
+        <h5>Fig.11 Growth of <em>P.pastoris</em> corresponding to different promoters.</h5>
+      </div>
+      <p>It is generally believed that PAOX1, the promoter of alcohol oxidase 1 in MUT pathway, is the strongest known promoter of P. pastoris. We noticed that in our experimental results, the strength of the promoter PDAS2 was stronger than that of the promoter PAOX1 (Fig.11). When we compared the growth curves of the two, we found that the growth level of the yeast corresponding to PDAS2 during shake flask fermentation was generally lower than that of PAOX1 (Fig.12). However, we had doubts about such data results. By comparing the fermentation data of previous batches, we thought that the growth curve of different fermentation batches would have different fluctuations due to the effects of experimental operation, environment and shaking table. Therefore, we could not draw the conclusion that strong promoters would reduce the synthesis of squalene and affect the early growth of the strain through this experiment.</p>
+      <div class="oneimg">
+        <img class="lazyload" data-src="../images/result-images/promoter-fig-12-min.jpg" alt="">
+        <h5>Fig.12 Growth of <em>P.pastoris</em> corresponding to P<sub><em>DAS2</em></sub> and P<sub><em>AOX1</em></sub>.</h5>
+      </div>
+      <div id="reference">
+        <h3>Reference</h3>
+        <p>[1]Zhang, X., Wang, D., Duan, Y., Zheng, X., Lin, Y., & Liang, S. (2020). Production of lycopene by metabolically engineered <em>Pichia pastoris</em>. Bioscience, biotechnology, and biochemistry, 84(3), 463-470. https://doi.org/10.1080/09168451.2019.1693250<br>[2]Araya-Garay, J. M., Feijoo-Siota, L., Veiga-Crespo, P., & Villa, T. G. (2011). cDNA cloning of a novel gene codifying for the enzyme lycopene β-cyclase from <em>Ficus carica</em> and its expression in Escherichia coli. Applied microbiology and biotechnology, 92(4), 769-777. https://doi.org/10.1007/s00253-011-3488-8</p>
+     </div>
+    </div>
+    
+    <div class="iframe2">
+      <h2>1. Construction of the mutation system</h2>
+      <div class="construc">
+        <h3>(1) Purpose of the experiment</h3>
+        <p>As depicted in Fig.1, there are at least 5 kinds of by-products during the patchoulol synthesis procedure. Thus, we planned to do patchoulol synthase (PTS) mutation to increase the specificity of the enzyme, as well as a supplement of static control system.</p>
+        <div class="oneimg">
+          <img class="lazyload" data-src="../images/result-images/pts-fig1-min.png" alt="" style="width:60%;">
+          <h5>Fig.1 Postulated reaction pathways to account for the different products generated by the patchoulol synthase from farnesyl diphosphate (adapted from Croteau et al.).</h5>
+        </div>
+        <h3>(2) Experiments</h3>
+        <h4>• Error-prone PCR</h4>
+        <p>Generation of a maximally diverse gene library is particularly important when employing non-targeted mutagenesis strategies. The method most often used to generate variants with random mutations is error-prone PCR (epPCR). Here we use the basic method for using epPCR to generate gene variants that exhibit a relatively balanced spectrum of mutations and for capturing as much diversity as possible through effective cloning of those variants.</p>
+        <p>We chose manganese ions (Mn<sup>2+</sup>) as mutagen for patchouli alcohol synthase gene to produce random mutations. The epPCR system are showing as follows. (Tbl.1)</p>
+        <table id="fame">
+          <tr>
+            <td>Fame</td>
+            <td>Volume</td>
+          </tr>
+          <tr>
+            <td>PCR Mix </td>
+            <td>25μL</td>
+          </tr>
+          <tr>
+            <td>Top strand primers</td>
+            <td>2μL</td>
+          </tr>
+          <tr>
+            <td>Bottom strand primers</td>
+            <td>2μL</td>
+          </tr>
+          <tr>
+            <td>Mn<sup>2+</sup></td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>dd water</td>
+            <td>~50μL</td>
+          </tr>
+        </table>
+        <h5>Tbl.1 System of epPCR.</h5>
+  
+        <h3>(3) Results and discussion</h3>
+        <p>We chose different kinds of Mn<sup>2+</sup> and tried different concertation and volume of it to construct the best mutation system. Result are showing in the table below. (Tbl.2)</p>
+        <table id="cycle">
+          <tr>
+            <td>Cycle</td>
+            <td>Types of salt</td>
+            <td>Concentration</td>
+            <td>Volume</td>
+            <td>Result</td>
+          </tr>
+          <tr style="background-color: rgb(242, 242, 242);">
+            <td rowspan="4">1</td>
+            <td rowspan="4">MnSO<sub>4</sub></td>
+            <td rowspan="4">2mM</td>
+            <td>0.4μL</td>
+            <td rowspan="4">Agarose gel electrophoresis showed no bands or the wrong bands</td>
+          </tr>
+          <tr style="background-color: rgb(242, 242, 242);">
+            <td>0.8μL</td>
+          </tr>
+          <tr style="background-color: rgb(242, 242, 242);">
+            <td>1μL</td>
+          </tr>
+          <tr style="background-color: rgb(242, 242, 242);">
+            <td>2μL</td>
+          </tr>
+          <tr>
+            <td rowspan="4">2</td>
+            <td rowspan="4">MnSO<sub>4</sub></td>
+            <td rowspan="4">8mM</td>
+            <td>1μL</td>
+            <td rowspan="4">The band are right through the agarose gel electrophoresis, but the sequencing results are all wrong. </td>
+          </tr>
+          <tr>
+            <td>2μL</td>
+          </tr>
+          <tr>
+            <td>3μL</td>
+          </tr>
+          <tr>
+            <td>4μL</td>
+          </tr>
+          <tr style="background-color: rgb(242, 242, 242);">
+            <td rowspan="4">3</td>
+            <td rowspan="4">MnCl<sub>2</sub></td>
+            <td rowspan="4">8mM</td>
+            <td>2μL</td>
+            <td rowspan="2">There were much more mutations than we expected.</td>
+          </tr>
+          <tr style="background-color: rgb(242, 242, 242);">
+            <td>4μL</td>
+          </tr>
+          <tr style="background-color: rgb(242, 242, 242);">
+            <td>6μL</td>
+            <td rowspan="2">The band are right through the agarose gel electrophoresis, but the sequencing results show no sign.</td>
+          </tr>
+          <tr style="background-color: rgb(242, 242, 242);">
+            <td>8μL</td>
+          </tr>
+          <tr>
+            <td rowspan="4">4</td>
+            <td rowspan="4">MnCl<sub>2</sub></td>
+            <td rowspan="4">8mM</td>
+            <td>0.5μL</td>
+            <td>There were less mutations than we expected.</td>
+          </tr>
+          <tr>
+            <td>0.75μL</td>
+            <td>3-5 bp mutation per 1000bp</td>
+          </tr>
+          <tr>
+            <td>1.25μL</td>
+            <td>There were much more mutations </td>
+          </tr>
+        </table>
+        <h5>Tbl.2 Result of PTS mutation.il</h5>
+        <p>From the results above, we finally chose 0.75μL 8mM MnCl<sub>2</sub> as our mutants to built our mutation system.</p>
+      </div>
+
+      <h2>2. Construction of a rapid selection system of mutants</h2>
+      <h3>(1) Purpose of the experiment</h3>
+      <p>As we know, traditional method to text the titer of terpenoids we use either GC or HPLC, which are not only complex but time consuming. Thus, based on the relationship between lycopene and patchoulol production in <em>P.pastoris</em> we have already mentioned, we developed a visual method to screen for efficient mutations in <em>PTS</em>.</p>
+      <h3>(2) Experiments & Result</h3>
+      <p>As mentioned before, we selected two promoters, P<sub><em>0547</em></sub> and P<sub><em>PGK1</em></sub>, from the promoter library as the promoters of the mutant <em>PTS</em>, and transferred the mutant <em>PTS</em> into <em>P.pastoris</em> strain 2OZPP by homologous recombination.</p>
+      <p><em>P.pastoris</em> strain 2OZPP and strains containing unmutated <em>PTS</em> with P<sub><em>0547</em></sub> and P<sub><em>PGK1</em></sub> as promoters were used as controls, and strains with mutated <em>PTS</em> were inoculated on BMMY solid plates at 30℃ and given 1% methanol daily. After 96h of incubation, we observed colonies of different colors (Fig.2).</p>
+      <div class="oneimg">
+        <img class="lazyload" data-src="../images/result-images/pts-fig2-min.jpg" alt="" style="width:30%">
+        <h5>Fig.2 First round of <em>PTS</em> visualization screening.</h5>
+      </div>
+      <p>We observed that colonies growing on the edges of the plates were generally lighter in color, and we believe that this situation is due to the edge effect caused by nutrient limitation at the edges of the plates, which can mislead the judgment of the <em>PTS</em> mutation effect. To reduce the interference of edge effects, we replaced the smaller plates and re-cultured and re-screened for the lighter colored strains.</p>
+      <p>In the second round of screening, we found several strains that were lighter in color and might be good mutants (Fig.3).</p>
+      <div class="oneimg">
+        <img class="lazyload" data-src="../images/result-images/pts-fig3-min.png" alt="" style="width:60%;">
+        <h5>Fig.3 Second round of <em>PTS</em> visualization screening. The left one is the result of pPICZA-P<sub><em>GAP</em></sub>-mut PTS-His. The left one is the result of pPICZA-P<sub><em>0547</em></sub>-mut PTS-His.</h5>
+      </div>
+      <p>Due to time constraints, we did not obtain enough positive strains, and we plan to continue to expand the capacity of the <em>PTS</em> library to screen for more positive strains.</p>
+      <p>Considering that the issue of nutrient limitation may interfere with the judgment of strain color when cultured on solid plates, we will select strains with lighter color and transfer them to BMMY liquid medium to be cultured in 96-well plates for screening.</p>
+      <p>Strains that are lighter in color in the 96-well plates will be transferred to shake flasks for fermentation and finally for quantitative validation of patchoulol yield. The best mutant <em>PTS</em> will thus be selected.</p>
+      <p>Screening in 96-well plates and shake flasks was not carried out due to time constraints, and we will continue to do the screening in future experiments.</p>
+    </div>
+
+    <div class="iframe3">
+      <h2>Dynamic regulation with light-control system</h2>
+      <h3>1. Purpose of the experiment</h3>
+      <p>The idea of constructing a light-control module in our host is derived from our previous wet lab results. As we discovered that by applying mere static control, our function of interest can not be reach. We turn to seek a dynamic control strategy to meet our need of changing the proportion of the two terpenoids at our will.</p>
+      <h3>2. Experiments</h3>
+      <p>In practice, we synthesize the parts, BBa_K4263009 and BBa_K4263010, and construct them on the same vector pPICZA. Four groups of our host, three parallel tests each, are set with difference in the promoter which control the expression of EL222 in 250ml shake flasks. All of the flasks are cultured for 48h, and methanol was added every 24h. </p>
+      <p>As for hardware, we build up a LED device to spray blue light. LEDs (5W, 465 nm) are hang above the flasks to create a blue light environment. The incubator was sealed with black cloth to block the blue light, preventing it from doing harm to the people passing by and reducing the influence from the outside. (Fig.1)</p>
+      <div class="twoimg">
+        <img class="lazyload" data-src="../images/result-images/dynamic-1-1-min.png" alt=""><img class="lazyload" data-src="../images/result-images/dynamic-1-2-min.png" alt="">
+        <h5>Fig.1 The incubator with blue light device</h5>
+      </div>
+      <h3>3. Results and discussion</h3>
+      <p>The titer from each parallel is examined by GC and HPLC. (Fig.2)</p>
+      <p>For the two control groups, we can see that lycopene and patchoulol are expressed normally, compared with our previous results using static promoters. In group 3, we proved that the light-induced system is able to turn some metabolic flux to the synthesis of patchoulol, meanwhile turning down that of lycopene. For group 4, in comparison to group 3, we discovered that longer blue light induces more synthesis of patchoulol, which means that the regulation of <em>PTS</em> is dose-dependent on light duration. </p>
+      <p>In conclusion, our blue light-induced system is proved to be effective in practice.</p>
+      <table id="if3-table">
+        <tr>
+          <td>Names</td>
+          <td>Dark</td>
+          <td>Blue light</td>
+          <td>Strain</td>
+        </tr>
+        <tr>
+          <td>Control-1</td>
+          <td>0</td>
+          <td>48h</td>
+          <td>2OZPP</td>
+        </tr>
+        <tr>
+          <td>Control-2</td>
+          <td>0</td>
+          <td>48h</td>
+          <td>2OZPP+PTS</td>
+        </tr>
+        <tr>
+          <td>Longer blue light duration</td>
+          <td>0</td>
+          <td>48h</td>
+          <td>2OZPP+PGAP-TF-C(120)5-PTS</td>
+        </tr>
+        <tr>
+          <td>Shorter blue light duration</td>
+          <td>16h</td>
+          <td>32h</td>
+          <td>2OZPP+PGAP-TF-C(120)5-PTS</td>
+        </tr>
+      </table>
+      <div class="twoimg" id="Two">
+        <img class="lazyload" data-src="../images/result-images/dynamic-2-2-min.jpg" alt=""><img class="lazyload" data-src="../images/proof-of-concept-images/lightbar.jpg" alt="">
+        <h5>Fig.2 Titer of lycopene and patchoulol of each parallel. The lycopene production of Control-1, Control-2, Longer group and Shorter group was 141.58 mg/L (15.42 mg/g DCW), 141.39 mg/L (15.24 mg/g DCW), 60.34 mg/L (9.42 mg/g DCW) and 121.05 mg/L (12.33 mg/g DCW), and the patchoulol production of Control-1, Control-2, Longer group and Shorter group was 0 mg/L (0 mg/g DCW), 1.21 mg/L (1.64 mg/g DCW), 3.13 mg/L (5.96 mg/g DCW) and 1.36 mg/L (1.85 mg/g DCW).</h5>
+      </div>
+      <p>Our next question is, naturally, whether the system efficient or not. How can we evaluate the performance and what can we do to improve it. Thus, we use <em>EGFP</em> as the target gene to figure out certain parameters of the system. However, limited time of wet lab disable us from continuing on our design, and we are not ready to present our progress here. The characterization of the parts may be done in the future.</p>
+    </div>
+
+    <div class="iframe4">
+      <h2>1. Purpose of the experiment</h2>
+      <p>After our design, we got the great cell factory that produces FUNCDYES! Next, we performed experiments to obtain FUNCDYES for dyeing to finish our downstream experiment.</p>
+      <h2>2. Experiments & Result</h2>
+      <p>In the industrial production scenario, we hope to use volatile solvent as the extractant to extract patchoulol during fermentation and then concentrate it for dyeing. However, in the laboratory, we used n-dodecane as the extraction agent in the fermentation process, which is not easy to concentrate. Therefore, in the subsequent dyeing experiments, we used store-bought patchoulol for dyeing experiment.</p>
+      <div class="rightfloat">
+        <div class="right">
+          <img class="lazyload" data-src="../images/result-images/dowmstream-fig1-min.jpg" alt="">
+          <h5>Fig.1 The fragrant red silk we dyed.</h5>
+        </div>
+        <p>At the end of fermentation, the fermentation broth was
+          collected and centrifuged to obtain lycopene containing
+          cells, which were then broken to obtain lycopene
+          dissolved in the extractant - ethyl acetate. The dye containing lycopene was obtained by concentrating it for an
+          appropriate time. We added some pure patchoulol to it,
+          and we got our FUNCDYES! We soaked the silk in
+          FUNCDYES, and after 15 minutes of dyeing, we succeeded in getting the red silk with fragrance! (Fig.1)</p>
+      </div>
+      <p>Next, we experimented with varying the concentration of lycopene to obtain silks of different colors. Also, by changing the ratio of patchouli alcohol to lycopene, we obtained silks with different aromatic intensity and color shades. (Fig.2)</p>
+      <div class="oneimg">
+        <img class="lazyload" data-src="../images/proof-of-concept-images/igem-min.jpg" alt="">
+        <h5>Fig.2 The silk of different color we dyed</h5>
+      </div>
+      <p>At the same time, we verified the dyeing effect of silk under different concentrations of lycopene. (Fig 3)</p>
+      <p>We observed the color and fragrance persistence of the silk obtained by dyeing, and we found that the color of the silk lightened slightly over fifteen days, but no significant fading occurred, and the fragrance persisted.</p>
+      <p>Although we managed to get fragrant red silks, they are not very bright in color. In the following experiment, we began to think about whether we could achieve better.</p>
+      <div class="oneimg">
+        <img class="lazyload" data-src="../images/result-images/dowmstream-fig3-min.jpg" alt="">
+        <h5>Figure 3 Silk dyed with different concentrations of lycopene</h5>
+      </div>
+      <div class="leftfloat">
+        <div class="left">
+          <table>
+            <tr>
+              <td>Time</td>
+              <td>Temperature</td>
+            </tr>
+            <tr>
+              <td>5min</td>
+              <td>0℃</td>
+            </tr>
+            <tr>
+              <td>5min</td>
+              <td>Room temperature</td>
+            </tr>
+            <tr>
+              <td>5min</td>
+              <td>60℃</td>
+            </tr>
+            <tr>
+              <td>15min</td>
+              <td>0℃</td>
+            </tr>
+            <tr>
+              <td>15min</td>
+              <td>Room temperature</td>
+            </tr>
+            <tr>
+              <td>15min</td>
+              <td>60℃</td>
+            </tr>
+            <tr>
+              <td>1h</td>
+              <td>0℃</td>
+            </tr>
+            <tr>
+              <td>1h</td>
+              <td>Room temperature</td>
+            </tr>
+            <tr>
+              <td>1h</td>
+              <td>60℃</td>
+            </tr>
+          </table>
+          <h5>Tbl.1 Grouping of time and temperature selection</h5>
+        </div>
+        <p>We changed the dyeing time, temperature, hoping to find the most suitable dyeing conditions. It was found that prolonging the staining time had no significant effect on the dyeing results, so in the subsequent dyeing experiments, we set the staining time at about 5 minutes. Moreover, the effect of temperature on the dyeing effect is not significant, and considering the cost of temperature control in industry, we believe that dyeing at room temperature is sufficient.</p>
+      </div>
+      <p>In addition, we have looked up the common composition of silk dyes on the market and found that most of them are water soluble, while lycopene and patchoulol are hydrophobic substances. Therefore, we set different groups to explore the more appropriate solvent.</p>
+      <table id="group">
+        <tr>
+          <td colspan="3">Grouping of solvent selection experiments</td>
+        </tr>
+        <tr>
+          <td>Group Name</td>
+          <td>Solvent</td>
+          <td>Additional treatment</td>
+        </tr>
+        <tr>
+          <td>A</td>
+          <td>Ethyl acetate</td>
+          <td>/</td>
+        </tr>
+        <tr>
+          <td>B</td>
+          <td>Ethyl acetate</td>
+          <td>Add 0.5 g/mL of NaCl</td>
+        </tr>
+        <tr>
+          <td>C</td>
+          <td>Ethyl acetate</td>
+          <td>Add 1 g/mL of NaCl</td>
+        </tr>
+        <tr>
+          <td>D</td>
+          <td>Ethyl acetate: Water=1:1</td>
+          <td>Use ultrasound during dyeing</td>
+        </tr>
+        <tr>
+          <td>E</td>
+          <td>Ethyl acetate: Water=1:1</td>
+          <td>Add tween 80</td>
+        </tr>
+        <tr>
+          <td>F</td>
+          <td>Ethyl acetate: Water=1:1</td>
+          <td>Add 0.5 g/mL of NaCl</td>
+        </tr>
+        <tr>
+          <td>G</td>
+          <td>Ethyl acetate: Water=1:1</td>
+          <td>Add 1 g/mL of NaCl</td>
+        </tr>
+      </table>
+      <h5>Tbl.2 Grouping of solvent selection experiments</h5>
+      <p>It was found that the addition of sodium chloride did have a positive effect on the coloring of the dye, but only in the solvent containing water. However, in solvents containing water, the phenomenon of uneven staining is more likely to occur. The results of the rest of the experimental groups showed that none of them stained as well as the pure ethyl acetate as a solvent (Fig 4). Therefore, we finally chose ethyl acetate as our solvent.</p>
+      <div class="oneimg">
+        <img class="lazyload" data-src="../images/result-images/dowmstream-fig4-min.jpg" alt="" style="width:25%">
+        <h5>Fig.4 Experimental results of solvent alteration</h5>
+      </div>
+      <p>Since we did not get the desired results in our experiments with staining conditions, we came to the staining plant hoping to talk to people with more experience and get some inspiration.</p>
+      <p><a href="../html/human-practices.html" target="_blank">Click this link(part one about <strong>Explore the significance</strong>) to see what we communicated~ </a></p>
+      <p>After talking with other experienced people, we have suggested some possible experimental improvements in the future. We proposed the idea of using cyclodextrins or liposomes to encapsulate the lycopene and patchoulol molecules, and by modifying the encapsulants, they would chemically react with the amino acids in the silk, thus giving the dyed silk superior color fastness and a longer lasting fragrance. It also occurred to us that it might be possible to use a supercritical CO<sub>2</sub> extractor to dye silk as a solution to the problem that dye molecules are only soluble in organic reagents.</p>
+      <p>Although we did not obtain the best experimental results due to technical limitations, we believe that these problems can be optimized in the process of industrial production.</p>
+    </div>
+  </article>
+
+
+  <script src="../js/jquery.js"></script>
+  <script src="../js/public.js"></script>
+  <script src="../js/human-practices.js"></script>
+</body>
+</html>

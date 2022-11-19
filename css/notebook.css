@@ -1,0 +1,175 @@
+nav .container {
+  background-image: url(../images/attributions-images/projectbgc-min.png);
+}
+nav .container .pic {
+  filter: hue-rotate(180deg);
+}
+article {
+  margin-top: -60px;
+}
+article a {
+  color: #65a5f4;
+}
+article a:hover {
+  text-decoration: underline;
+}
+article sub,
+article sup {
+  font-size: 12px;
+}
+article .month {
+  margin-top: 130px;
+  height: 100px;
+  position: relative;
+}
+article .month p {
+  text-align: center;
+  line-height: 100px;
+  user-select: none;
+  font-weight: bold;
+  color: #6e9694;
+  font-size: 32px;
+}
+article .month .red {
+  height: 80%;
+  width: 10%;
+  border: 2px solid #acced1;
+  background-color: #e7ccbb;
+  border-radius: 13px;
+}
+article .month .green {
+  height: 50%;
+  width: 20%;
+  border: 2px solid #acced1;
+  background-color: #afdfdd;
+  border-radius: 13px;
+  opacity: 0.7;
+}
+article .month .blue {
+  height: 27%;
+  width: 60%;
+  background: linear-gradient(to right, rgba(163, 201, 215, 0.5), #ffffff);
+}
+article .month .left div {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+article .month .left .blue {
+  border-top-left-radius: 13px;
+  border-bottom-left-radius: 13px;
+  border-top: 2px solid #acced1;
+}
+article .month .right div {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+article .month .right .blue {
+  background: linear-gradient(to left, rgba(163, 201, 215, 0.5), #ffffff);
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-bottom: 2px solid #acced1;
+}
+article .tab {
+  position: relative;
+  overflow-x: auto;
+  transition: all 1s ease;
+}
+article .tab::-webkit-scrollbar {
+  height: 10px;
+}
+article .tab::-webkit-scrollbar-track {
+  background: #e5877a;
+  border-radius: 10px;
+}
+article .tab::-webkit-scrollbar-thumb {
+  background: white;
+  border: 2px solid #f97467;
+  border-radius: 10px;
+}
+article .tab .tabcontain {
+  width: 2280px;
+  padding-top: 20px;
+  height: 105px;
+}
+article .tab .tab-green {
+  position: absolute;
+  z-index: 3;
+  top: 20px;
+  height: 12px;
+  width: 2280px;
+  background-color: #c7ffe4;
+}
+article .tab .tab-green:nth-child(3) {
+  top: 44px;
+}
+article .tab .tab-blue {
+  position: absolute;
+  z-index: 3;
+  top: 32px;
+  height: 12px;
+  width: 2280px;
+  background-color: #aed1d1;
+}
+article .tab .tab-month {
+  float: left;
+  position: relative;
+  background-color: #e7ccbb;
+  height: 80px;
+  padding-top: 44px;
+  width: 150px;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  text-align: center;
+  font-size: 22px;
+  color: #566d6d;
+  border: 2px solid #bedada;
+}
+article .tab .tab-month .bigcircle {
+  position: absolute;
+  z-index: 10;
+  width: 60px;
+  height: 60px;
+  background-color: #fff;
+  border-radius: 50%;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+article .tab .tab-month .bigcircle:hover {
+  filter: hue-rotate(120deg);
+}
+article .tab .tab-month .bigcircle .smallcircle {
+  position: absolute;
+  top: 7px;
+  left: 7px;
+  right: 7px;
+  bottom: 7px;
+  border-radius: 50%;
+  border: 6px solid #aed1d1;
+}
+article .tab .tab-month .bigcircle .smallcircle img {
+  position: absolute;
+  z-index: 100;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  width: 36px;
+}
+article .tab .tab-month .bigcircle .white {
+  position: absolute;
+  width: 12px;
+  height: 48px;
+  background-color: #fff;
+  left: 50%;
+  top: 6px;
+  z-index: 20;
+  transform: translateX(-50%);
+}
+article h3 {
+  margin-top: 30px;
+}

@@ -1,0 +1,105 @@
+nav {
+    .container {
+        height: 500px;
+        width: 100%;
+        position: relative;
+        background-image: url(../images/member-images/members_allpic.jpg);
+        background-size: 100% 100%;
+
+        .title {
+            position: absolute;
+            left: 50%;
+            bottom: 3%;
+            font-size: 30px;
+            color: white;
+            transform: translate(-50%, -50%) translateZ(-100px);
+        }
+    }
+}
+
+
+section {
+    position: relative;
+    z-index: 9999;
+    margin: 60px 10vw 100px;
+    font-size: 22px;
+    line-height: 36px;
+    text-align: justify;
+    font-family: 'Arial';
+
+    .title {
+        text-align: center;
+        font-size: 50px;
+        line-height: 70px;
+        margin-bottom: 15px;
+        margin-top: 50px;
+        font-family: fantasy, 'Microsoft YaHei';
+    }
+
+    .articles {
+        text-align: justify;
+        font-size: 22px;
+        line-height: 36px;
+    }
+
+    .container {
+        display: flex;
+
+        .subbox {
+            display: flex;
+            flex: 1;
+            justify-content: center;
+            align-items: center;
+        }
+
+        img {
+            // width: 200px;
+            height: 150px;
+        }
+    }
+}
+
+.scroll {
+    width: 100%;
+    overflow: auto;
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 0;
+    border-top: 1px solid rgb(188, 91, 87);
+    border-left: 1px solid rgb(188, 91, 87);
+    width: 1800px;
+    font-size: 12px;
+
+    tr td:first-child {
+        background-color: rgb(255, 216, 215);
+        width: 30px;
+    }
+
+    tr td:nth-child(n+1) {
+        width: 105px;
+    }
+
+    td {
+        border: 1px solid rgb(188, 91, 87);
+        border-top: none;
+        border-left: none;
+        height: 30px;
+        line-height: 30px;
+        // width: 220px;
+        text-align: center;
+    }
+
+    tr:nth-child(2) {
+        td {
+            line-height: 20px;
+        }
+    }
+
+    img {
+        vertical-align: middle;
+        line-height: 30px;
+        width: 23px;
+    }
+}

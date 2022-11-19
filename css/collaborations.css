@@ -1,0 +1,179 @@
+nav .container {
+  height: 500px;
+  width: 100%;
+  position: relative;
+  background-image: url(../images/member-images/members_allpic.jpg);
+  background-size: 100% 100%;
+}
+nav .container .title {
+  position: absolute;
+  left: 50%;
+  bottom: 3%;
+  font-size: 30px;
+  color: white;
+  transform: translate(-50%, -50%) translateZ(-100px);
+}
+article {
+  position: relative;
+  z-index: 3;
+  margin: 60px 10vw 100px;
+  font-size: 22px;
+  line-height: 36px;
+  text-align: justify;
+  font-family: 'Arial';
+}
+article .tab {
+  overflow: hidden;
+}
+article .tab ul li {
+  float: left;
+  text-align: center;
+  width: 50%;
+  color: #717071;
+  font-size: 24px;
+  font-weight: bold;
+  padding: 5px 0;
+  height: 40px;
+  border-radius: 20px;
+  line-height: 30px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+article .tab ul li:hover {
+  background-color: #eeeeee;
+}
+article .tab ul li:nth-child(1) {
+  color: #bb5e6d;
+  font-size: 28px;
+}
+article h3 {
+  font-weight: normal;
+  text-align: justify;
+  line-height: 36px;
+  font-size: 22px;
+  padding-top: 60px;
+}
+article h4 {
+  text-align: center;
+  color: #909090;
+  font-size: 12px;
+  line-height: 28px;
+  font-weight: 700;
+  margin-top: 10px;
+}
+article .CCiC {
+  display: block;
+}
+article .CCiC .CCiC_certificate {
+  background-color: #f7f8f8;
+  margin: -70px -10vw 0px;
+  padding: 120px 0 50px;
+}
+article .CCiC .CCiC_certificate img {
+  width: 20%;
+}
+article .CCiC .CCiC_certificate img:nth-child(1) {
+  margin: 0 10% 0 20%;
+}
+article .CCiC .CCiC_certificate img:nth-child(2) {
+  margin: 0 20% 0 10%;
+}
+article .SouthernMeeting {
+  display: none;
+}
+article .SouthernMeeting .meeting {
+  width: 100%;
+  overflow: hidden;
+}
+article .SouthernMeeting .meeting .left {
+  width: 60%;
+  text-align: center;
+  float: left;
+}
+article .SouthernMeeting .meeting .left img {
+  width: 80%;
+  margin: 5% 10% 0;
+  border: 1px solid #000;
+}
+article .SouthernMeeting .meeting .right {
+  padding-top: 4%;
+  line-height: 30px;
+  font-size: 22px;
+  text-align: justify;
+}
+article .NanJing {
+  display: none;
+  margin-top: 60px;
+}
+article .NanJing a {
+  color: #0ba8d8;
+}
+article .NanJing a:hover {
+  text-decoration: underline;
+}
+article .NanJing h2 {
+  background-color: #ffcfa7;
+  border-radius: 20px;
+  font-size: 22px;
+  padding: 0 15px;
+  display: inline-block;
+}
+article .NanJing p {
+  margin-top: 30px;
+}
+article .NanJing .oneimg img {
+  display: block;
+  margin: 10px auto 0;
+  width: 50%;
+}
+article .NanJing .twoimg img {
+  width: 50%;
+  padding: 10px 10%;
+}
+article .LZU {
+  display: none;
+  margin-top: 60px;
+}
+article .LZU .oneimg img {
+  display: block;
+  margin: 10px auto 0;
+  width: 50%;
+}
+article .LZU p {
+  margin-top: 30px;
+}
+article .LZU #f3-3 {
+  width: 50%;
+  margin: 20px 0 0 0;
+  padding: 0 7vw 0 15px;
+}
+article .LZU #f3-1 {
+  width: 50%;
+  margin: 20px 0 0 0;
+  padding: 0 15px 0 7vw;
+}
+article .LZU #f4-1 {
+  width: 43%;
+  margin: 0;
+  padding: 0 15px 0 7vw;
+}
+article .LZU #f4-2 {
+  margin: 0;
+  width: 57%;
+  padding: 0 7vw 0 15px;
+}
+article .LZU a {
+  color: #0ba8d8;
+}
+article .LZU a:hover {
+  text-decoration: underline;
+}
+article .LZU h4 {
+  margin: 0 0 10px;
+}
+article .LZU .foot img {
+  width: 34%;
+  margin: 0 8%;
+  vertical-align: middle;
+}

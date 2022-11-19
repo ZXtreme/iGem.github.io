@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contributions</title>
+  <link rel="stylesheet" href="../css/public.css">
+  <link rel="stylesheet" href="../css/wave.css">
+  <link rel="stylesheet" href="../css/contribution.css">
+</head>
+<body>
+  <!-- loading 动画 -->
+  <div class="loading-out">
+    <div class="loading-fade-in">
+        <div class="loading-container">
+            <div class="one common"></div>
+            <div class="two common"></div>
+            <div class="three common"></div>
+            <div class="four common"></div>
+            <div class="five common"></div>
+            <div class="six common"></div>
+            <div class="seven common"></div>
+            <div class="eight common"></div>
+        </div>
+    </div>
+  </div>
+  
+  <!-- 头部 -->
+  <header>
+    <ul>
+        <li><a href="../index.html">HOME</a></li>
+        <li><a href="#">TEAM</a>
+            <dl>
+                <dd><a href="../html/member.html">Members</a></dd>
+                <dd><a href="../html/attributions.html">Attributions</a></dd>
+                <dd><a href="../html/collaborations.html">Collaboration</a></dd>
+                <dd><a href="../html/partnership.html">Partnership</a></dd>
+            </dl>
+        </li>
+        <li><a href="#">PROJECT</a>
+            <dl>
+                <dd><a href="../html/description.html">Description</a></dd>
+                <dd><a href="../html/contribution.html">Contributions</a></dd>
+                <dd><a href="../html/proof-of-concept.html">Proof of Concept</a></dd>
+                <dd><a href="../html/implementation.html">Implementation</a></dd>
+                <dd><a href="../html/parts.html">Parts</a></dd>
+                <dd><a href="../html/notebook.html">Notebook</a></dd>
+            </dl>
+        </li>
+        <li><a href="#">LAB</a>
+            <dl>
+                <dd><a href="../html/result.html">Result</a></dd>
+                <dd><a href="../html/engineering.html">Engineering</a></dd>
+                <dd><a href="../html/model.html">Modeling</a></dd>
+            </dl>
+        </li>
+        <li><a href="../html/safety.html">SAFETY</a></li>
+        <li><a href="#">HUMAN PRACTICE</a>
+            <dl>
+                <dd><a href="../html/overview.html">Overview</a></dd>
+                <dd><a href="../html/human-practices.html">Intergrated Human Practice</a></dd>
+                <dd><a href="../html/communication.html">Education & Communication</a></dd>
+                <dd><a href="../html/sustainable.html">Sustainable</a></dd>
+            </dl>
+        </li>
+        <li><a href="../html/judging.html">JUDGING</a></li>
+    </ul>
+</header>
+
+  <!-- 滚动条 -->
+  <div class="scrollBar">
+    <div class="back">BACK</div>
+    <div class="bar">
+        <img class="lazyload" data-src="../images/main-images/main1.png" alt="">
+    </div>
+  </div>
+
+  <nav>
+    <div class="container">
+        <a href="../index.html"><img src="../images/main-images/logo.png" alt=""></a>
+        <span class="pic">Contribution</span>
+    </div> 
+  </nav>
+  <div class="wave"></div>
+
+  <article>
+    <h2 style="text-align: center;">Overview</h2>
+    <p>For iGEMers , it is important to solve problems in projects from many aspects not only on the biology. SCUT-China firmly believes that experience from any part of our project may contribute in some way to the iGEM community. Thus, the contribution of SCUT-China of 2022 is divided into these aspects including wet lab , dry lab, HP and enlightenment from shortcomings.</p>
+    
+    <div class="wet">
+        <h2 class="pink">Wet lab</h2>
+        <h4>1. Characterization of Parts</h4>
+        <p>Here, we listed the parts that we have characterized:</p>
+        <table>
+            <tr>
+                <td>Name of BioBricks</td>
+                <td>Name in the lab</td>
+                <td>Source</td>
+                <td>What contribution have we made?</td>
+            </tr>
+            <tr>
+                <td>BBa_K4263000</td>
+                <td>P<sub>0547</sub></td>
+                <td rowspan="6">Natural histone in the methylol trophic yeast <em>P.pastoris</em></td>
+                <td rowspan="6">We used <em>EGFP</em> as the reporter gene in <em>P.pastoris</em> GS115 strain to characterize the promoter strength by measuring the relative fluorescence (figure 1).</td>
+            </tr>
+            <tr>
+                <td>BBa_K4263001</td>
+                <td>P<sub>ACC1</sub></td>
+            </tr>
+            <tr>
+                <td>BBa_K4263002</td>
+                <td>P<sub>DAS2</sub></td>
+            </tr>
+            <tr>
+                <td>BBa_K4263003</td>
+                <td>P<sub>PGK1</sub></td>
+            </tr>
+            <tr>
+                <td>BBa_K4263004</td>
+                <td>P<sub>PET9</sub></td>
+            </tr>
+            <tr>
+                <td>BBa_K4263005</td>
+                <td>P<sub>ERG9</sub></td>
+            </tr>
+        </table>
+        <p>Overall, among the promoters we selected, the strength of methanol inducible promoters is generally greater than that of constitutive promoters, among which P<sub>DAS2</sub> , P<sub>AOX1</sub> and P<sub>0547</sub> are inducible promoters, and the others are constitutive promoters. To our delight, pichia pastoris strain with P<sub>DAS2</sub> has stronger activity. The characterization of promoters also paved the way for us to carry out subsequent fermentation.</p>
+        <img class="lazyload" data-src="../images/contribution-images/fluorescence.jpg" alt="" id="fluorescence">
+        <h5>Fig 1. Fluorescence per OD of different promoters within 120 hours</h5>
+
+        <h4>2. Improving the Documented Sequence</h4>
+        <p>Here, we have performed codon optimization on blue light activated transfer factor SV40-VP16-EL222. </p>
+        <table id="table2">
+            <tr>
+                <td>Name of BioBricks</td>
+                <td>Name in the lab</td>
+                <td>Source</td>
+                <td>What contribution have we made?</td>
+            </tr>
+            <tr>
+                <td>BBa_K4263009</td>
+                <td>SV40-VP16-EL222</td>
+                <td><em>Erythrobacter litoralis</em></td>
+                <td>We optimized the codon of this sequence for its Pichia pastoris chassis.</td>
+            </tr>
+        </table>
+        <p>Since the optogenetic system based on photosensitive protein EL222 was more often used in <em>Escherichia coli</em> and <em>Saccharomyces cerevisiae</em><sup>[1]</sup> in the past and was recently constructed in <em>Pichia pastoris</em><sup>[2]</sup> , as a new chassis cell , it is necessary to optimize the codon of this sequence.</p>
+        
+        <h4>3. Optogenetic System in <em>Pichia pastoris</em></h4>
+        <p>For the project itself, the introduction of optogenetic system optimized our <em>Pichia pastoris</em> strains. For example, <strong>light induction reduces the dependence of <em>P.pastoris</em> on methanol, and complements the regulation means of static regulation mainly based on the promoter engineering</strong>, realizing dynamic regulation in different time and space.</p>
+        <p>For the iGEM community, <strong>we expanded the application scenario of <em>P.pastoris</em> optogenetic system</strong>. The inspiration of light control came from the recently constructed optogenetic system based on the photosensitive protein EL222 <em>P.pastoris</em> in for the first time<sup>[2]</sup>. In this study, the researchers used recombinant lipase as the reporter gene, and used recombinant lipase as an example of protein expression. As an eukaryote, <em>P.pastoris</em> has many advantages of eukaryotic expression system, such as protein processing, folding and post-translational modification<sup>[3]</sup>, and has been widely used in terpenoid production. Therefore, we came up with the idea of introducing the optogenetic system based on the photosensitive protein EL222 into the engineering <em>P.pastoris</em> strain for terpenoid production, and successfully proved our concept. We hoped our project experience can provide reference for other iGEMers to produce terpenoids in <em>P.pastoris</em> by light induction.</p>
+
+        <h4>4. Ligation "Calculator"</h4>
+        <p>For <strong>T4 DNA ligation and homologous recombination ligation, procedures in our lab is a little bit complicated</strong>, because a lot of calculations about volume of vectors and fragments are needed before preparing these ligation system. Therefore, our team designed a calculator for T4 ligation and homologous recombination using Excel and simple functional relationship.</p>
+        <p>The source file of the two calculators is as follows.</p>
+        <div class="xlsx">
+            <a href="../images/contribution-images/Ligation-Calculator.xlsx" download="Ligation-Calculator">
+                <img class="lazyload" data-src="../images/contribution-images/xlsx.png" alt="">
+            </a>
+        </div>
+        <p>The functional relationships of T4 ligation are as follows:</p>
+        <div class="math">
+            <p>\( V_{vector}+V_{fragment}=7 \mu L \)</p>
+            <p>\( 5 c_{vector} \times V_{vector}=c_{fragment} \times V_{fragment} \)</p>
+        </div>
+        <p>The functional relationships of homologous recombination ligation are as follows:</p>
+        <div class="math">
+            <p>\( V_{vector}+V_{fragment}=5 \mu L \)</p>
+            <math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mstyle scriptlevel="0"><mspace width="1em"></mspace></mstyle><mfrac><mrow><msub><mi>c</mi><mrow><mi>f</mi><mi>r</mi><mi>a</mi><mi>g</mi><mi>m</mi><mi>e</mi><mi>n</mi><mi>t</mi></mrow></msub><mo>×</mo><msub><mi>V</mi><mrow><mi>f</mi><mi>r</mi><mi>a</mi><mi>g</mi><mi>m</mi><mi>e</mi><mi>n</mi><mi>t</mi></mrow></msub></mrow><msub><mi>L</mi><mrow><mi>f</mi><mi>r</mi><mi>a</mi><mi>g</mi><mi>m</mi><mi>e</mi><mi>n</mi><mi>t</mi></mrow></msub></mfrac><mo>=</mo><mfrac><mrow><mn>5</mn><msub><mi>c</mi><mrow><mi>v</mi><mi>e</mi><mi>c</mi><mi>t</mi><mi>o</mi><mi>r</mi></mrow></msub><mo>×</mo><msub><mi>V</mi><mrow><mi>v</mi><mi>e</mi><mi>c</mi><mi>t</mi><mi>o</mi><mi>r</mi></mrow></msub></mrow><msub><mi>L</mi><mrow><mi>v</mi><mi>e</mi><mi>c</mi><mi>t</mi><mi>o</mi><mi>r</mi></mrow></msub></mfrac></math>
+        </div>
+    </div>
+
+    <div class="dry">
+        <h2 class="pink">Dry lab</h2>
+        <h4>1. A generalized genome-scale model of <em>Pichia pastoris</em></h4>
+        <p>Among all the genome-scale models of <em>P.pastoris</em>, the iMT1026 (v3.0) is currently the one with most elaborate and accurate annotations . However, the model works well only under the COBRA environment, and we cannot simply apply the flux balance analysis since it contains multiple growth reaction. <strong>To improve its adaptation, teammates from the dry lab managed to modify the model, with the deletion of several unconsidered growth reaction and improvement of some parameters.</strong> The modified model can be imported in some commonly used environment, including the CellNetAnalyzer from MATLAB.</p>
+        <h4>2. An integration of metabolic analysis</h4>
+        <p>While constructing the model, we also gathered comprehensive perception of various metabolic analytical methods and tools. <strong>According to this, a file is integrated with methods that are majorly applied for metabolic simulation, the corresponding toolkits or software, and the comparation among different kinds of methods.</strong> Inside the file there are the description and mathematical equation for every metabolic model, each with a detailed user instruction for the toolkit that can apply this method in. The integration is easy for people to read and catch up with, meanwhile providing adequate information for them to select and construct a model. We first deliver this file to the team from 2023 SCUT-China, and will post it on our online blog later.</p>
+    </div>
+
+    <div class="hp">
+        <h2 class="pink">Hunman Practice</h2>
+        <p><strong>For SCUT-China 2022 itself, our main contribution is to train and screen the candidates for the next year's team during the winter and summer holidays.</strong> In the one-year cycle, we have trained candidates who are willing to join iGEM on science popularization of synthetic biology and related biological software, and guided them to analyze and understand the excellent iGEM projects in previous years. After training and interview, we have ensured the continuation of SCUT-China and the basic quality of new team members.</p>
+        <p><strong>For the public, we have carried out a series of educational activities this year,</strong> such as issuing project design questionnaires to the public, launching "running plasmids" for college students, popularizing synthetic biology to students in Guangya Middle School, and going to Kangyuan therapy station to help the disabled experience our dye game. In addition, we have designed a puzzle game to help the public better understand our project and learn more about synthetic biology.</p>
+    </div>
+
+    <div class="shortcomings">
+        <h2 class="pink">Enlightenment from shortcomings</h2>
+        <p>As an iGEM project with the topic of manufacturing, we hope to provide some universal enlightenment to other teams by exploring our own shortcomings in project design.</p>
+        <p>First of all, from the perspective of production selection, the combination of patchoulol and lycopene did not give better play to the advantages of co-expression system. At present, <strong>the co-expression of the two terpenoids is limited to the application of this project, and there is little possibility of expanding the application.</strong></p>
+        <p>Secondly, the optogenetic system we constructed can only regulate PTS genes in one direction , but not in two directions , which is not able to regulate genes in the lycopene synthetic pathway. Since the <strong>optogenetic system</strong> of this project <strong>has only two states: on and off</strong>, we can only achieve the accumulation of different products by manually or automatically changing the time of light and darkness. <strong>We believe that such a control means is relatively simple</strong>, and we need to further develop the role of promoters, which we don't have enough time to complete.</p>
+        <p>In addition, in the process of strain construction, we did not successfully construct the double expression plasmid with <em>EGFP</em> as the reporter gene, so we did not measure the leakage of fluorescence through the microplate reader. According to previous studies<sup>[2]</sup>, we believe that the leakage of the optogenetic system in <em>Pichia pastoris</em> constructed by us is still at a high level, and it is necessary to screen the repressor protein of <em>Pichia pastoris</em> to reduce the leakage.</p>
+        <p>We hope our problems during the implementation of the project can provide some reference to iGEM community and help other teams avoid similar inconvenience.</p>
+    </div>
+
+    <div class="reference">
+        <h2>Reference</h2>
+        <p>[1] Rullan, M., Benzinger, D., Schmidt, G. W., Milias-Argeitis, A., & Khammash, M. (2018). An Optogenetic Platform for Real-Time, Single-Cell Interrogation of Stochastic Transcriptional Regulation. Molecular cell, 70(4), 745-756.e6. https://doi.org/10.1016/j.molcel.2018.04.012</p>
+        <p>[2] Wang, Z., Yan, Y., & Zhang, H. (2022). Design and Characterization of an Optogenetic System in Pichia pastoris. ACS synthetic biology, 11(1), 297-307. https://doi.org/10.1021/acssynbio.1c00422</p>
+        <p> [3] Cereghino, J. L., & Cregg, J. M. (2000). Heterologous protein expression in the methylotrophic yeast Pichia pastoris. FEMS microbiology reviews, 24(1), 45-66. https://doi.org/10.1111/j.1574-6976.2000.tb00532.x</p>
+    </div>
+  </article>
+
+  <script src="../js/jquery.js"></script>
+  <script src="../js/public.js"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</body>
+</html>

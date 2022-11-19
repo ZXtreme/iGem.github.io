@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  cursor: default;
+  user-select: none;
+}
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #151726;
+}
+body:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(-25%, -25%);
+  width: 30%;
+  height: 60%;
+  border-radius: 50%;
+  background: linear-gradient(#ee9ca7, #ffdde1);
+}
+.big_box {
+  width: 90vw;
+  height: 80vh;
+  min-width: 1200px;
+  min-height: 530px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10vh;
+  padding: 0 50px 50px 50px;
+}
+.main_game {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 30px;
+  overflow: hidden;
+}
+.main_game .login {
+  width: 30%;
+  margin: 5% auto;
+}
+.main_game .login h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: white;
+}
+.main_game .login .check {
+  margin-top: -20px;
+  margin-bottom: 10px;
+}
+.main_game .login .check label {
+  color: white;
+}
+.main_game .login .btn {
+  cursor: pointer;
+  width: 100%;
+  background-color: lightblue;
+  padding: 15px;
+  border: 0;
+  font-size: 16px;
+  font-family: inherit;
+}
+.main_game .login .btn:active {
+  transform: scale(0.98);
+}
+.main_game .login .form-control {
+  width: 100%;
+  margin: 20px 0 40px;
+  position: relative;
+}
+.main_game .login .form-control .condition {
+  position: absolute;
+  top: 50%;
+  right: -10px;
+  transform: translate(100%, -50%);
+  color: #fff;
+}
+.main_game .login .form-control .condition svg {
+  vertical-align: middle;
+  display: none;
+}
+.main_game .login .form-control input {
+  background-color: transparent;
+  border: 0;
+  border-bottom: 2px solid white;
+  display: block;
+  width: 100%;
+  padding: 15px 0;
+  font-size: 18px;
+  color: white;
+  outline: 0;
+}
+.main_game .login .form-control label {
+  position: absolute;
+  left: 0;
+  top: 15px;
+  color: white;
+}
+.main_game .login .form-control label span {
+  display: inline-block;
+  font-size: 18px;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}

@@ -1,0 +1,41 @@
+nav .container {
+  background-image: url(../images/attributions-images/safetybgc-min.png);
+}
+nav .container .pic {
+  filter: hue-rotate(280deg);
+}
+article p {
+  margin-top: 20px;
+}
+article p a {
+  color: #f29c88;
+}
+article p a:hover {
+  text-decoration: underline;
+}
+article h2 {
+  margin: 60px 0 20px;
+}
+article h4 {
+  margin: 20px 0 20px;
+  font-weight: normal;
+  color: #f39d88;
+}
+article .reference {
+  margin-top: 60px;
+  color: #a09ea1;
+  font-size: 16px;
+  line-height: 20px;
+}
+article div[class^='linkBox'] {
+  padding: 30px 50px;
+  border-radius: 30px;
+  margin-top: 20px;
+}
+article .linkBox1 {
+  background-color: #fff8e8;
+}
+article .linkBox2 {
+  background-color: #eef6e8;
+  color: #007ea4;
+}

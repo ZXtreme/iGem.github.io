@@ -1,0 +1,227 @@
+nav .container {
+  background-image: url(../images/attributions-images/labbgc-min.png);
+}
+nav .container .pic {
+  filter: hue-rotate(260deg);
+}
+.steps {
+  position: fixed;
+  width: 15vw;
+  top: 35%;
+  left: 0;
+  z-index: 10;
+  padding-left: 5px;
+  transition: 1s;
+  opacity: 0;
+  cursor: pointer;
+}
+.steps h4 {
+  font-size: 1vw;
+  line-height: 30px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-weight: normal;
+  color: #9e9e9f;
+}
+.steps h4:hover {
+  font-weight: bold !important;
+  color: #000000 !important;
+}
+article {
+  margin: -100px 10vw 100px 15vw;
+}
+article sub,
+article sup {
+  font-size: 12px;
+}
+article h5 {
+  color: #595757;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: normal;
+  text-align: center;
+  width: 70%;
+  margin: 10px auto 0;
+}
+article h2 {
+  margin-top: 60px;
+  color: #6d6c6c;
+}
+article h3 {
+  margin-top: 30px;
+}
+article h4 {
+  margin-top: 20px;
+}
+article .iframe0,
+article .iframe1,
+article .iframe2,
+article .iframe3,
+article .iframe4 {
+  display: none;
+}
+article .iframe0 {
+  margin-top: 60px;
+  display: block;
+}
+article p {
+  margin-top: 20px;
+}
+article .iframe1 .exp h3 {
+  color: #6db1c6;
+}
+article .iframe1 .exp h4 {
+  color: #9accd8;
+}
+article .iframe1 h3 {
+  color: #c46e74;
+}
+article .iframe1 h4 {
+  color: #ef9aa8;
+}
+article .iframe1 #reference h3 {
+  color: #000;
+}
+article .iframe1 #reference p {
+  font-size: 18px;
+  line-height: 30px;
+}
+article .iframe2 .construc h3 {
+  color: #6db1c6;
+}
+article .iframe2 .construc h4 {
+  color: #9accd8;
+}
+article .iframe2 h3 {
+  color: #d68a76;
+}
+article .iframe2 #fame {
+  margin: 10px auto 0;
+}
+article .iframe2 #fame td {
+  padding: 5px 15px;
+}
+article .iframe2 #fame tr:nth-child(1) {
+  background-color: #009999;
+  color: white;
+}
+article .iframe2 #fame tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+article .iframe2 #cycle {
+  margin: 10px auto 0;
+}
+article .iframe2 #cycle tr:nth-child(1) {
+  background-color: #009999;
+  color: white;
+}
+article .iframe2 #cycle td {
+  padding: 5px 5px;
+}
+article .iframe3 .twoimg img {
+  display: inline-block;
+  padding: 10px 0 0 0;
+}
+article .iframe3 .twoimg img:nth-child(1) {
+  margin-left: 10%;
+  width: 34.2%;
+}
+article .iframe3 .twoimg img:nth-child(2) {
+  width: 45.8%;
+  margin-right: 10%;
+}
+article .iframe3 #if3-table {
+  margin: 10px auto 0;
+}
+article .iframe3 #if3-table tr:nth-child(1) {
+  background-color: #5b9bd5;
+  color: white;
+}
+article .iframe3 #if3-table tr:nth-child(2),
+article .iframe3 #if3-table tr:nth-child(4) {
+  background-color: #ddebf7;
+}
+article .iframe3 #Two img:nth-child(1) {
+  width: 40.2%;
+}
+article .iframe3 #Two img:nth-child(2) {
+  width: 34.8%;
+}
+article .iframe4 a {
+  color: #0ea8d8;
+}
+article .iframe4 a:hover {
+  text-decoration: underline;
+}
+article .iframe4 .rightfloat {
+  overflow: hidden;
+}
+article .iframe4 .rightfloat .right {
+  float: right;
+  width: 25%;
+  margin: 30px 10px 0 20px;
+}
+article .iframe4 .rightfloat .right img {
+  width: 100%;
+}
+article .iframe4 .leftfloat {
+  width: 90%;
+  margin: 20px auto 0;
+  overflow: hidden;
+}
+article .iframe4 .leftfloat .left {
+  float: left;
+  margin-top: 25px;
+}
+article .iframe4 .leftfloat .left table {
+  border-top: 2px solid #c9a591;
+  border-left: 2px solid #c9a591;
+  margin-bottom: 0;
+}
+article .iframe4 .leftfloat .left table tr:nth-child(1) {
+  background-color: #f2b48b;
+  color: white;
+}
+article .iframe4 .leftfloat .left table td {
+  border-right: 2px solid #c9a591;
+  border-bottom: 2px solid #c9a591;
+  font-size: 16px;
+}
+article .iframe4 #group {
+  margin: 10px auto 0;
+}
+article .iframe4 #group td {
+  padding: 5px 10px;
+  font-size: 16px;
+}
+article .iframe4 #group tr:nth-child(1) {
+  background-color: #f8cbad;
+}
+article .iframe4 #group tr:nth-child(2) {
+  background-color: #fce4d6;
+}
+article .oneimg img {
+  display: block;
+  margin: 20px auto 0;
+  width: 45%;
+}
+article .twoimg img {
+  width: 50%;
+  padding: 10px 10% 0;
+}
+article table {
+  margin: 0 auto 40px;
+  border-collapse: separate;
+  border-spacing: 0;
+  border-top: 2px solid #000;
+  border-left: 2px solid #000;
+}
+article table td {
+  text-align: center;
+  padding: 5px;
+  border-right: 2px solid #000;
+  border-bottom: 2px solid #000;
+  font-size: 12px;
+  line-height: 20px;
+}

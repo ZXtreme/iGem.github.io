@@ -1,0 +1,139 @@
+nav {
+  .container {
+    height: 500px;
+    width: 100%;
+    position: relative;
+    background-image: url(../images/member-images/members_allpic.jpg);
+    background-size: 100% 100%;
+
+    .title {
+      position: absolute;
+      left: 50%;
+      bottom: 3%;
+      font-size: 30px;
+      color: white;
+      transform: translate(-50%, -50%) translateZ(-100px);
+    }
+  }
+}
+
+.art_title {
+  display: block;
+  text-align: center;
+  color: rgb(129, 134, 154);
+  height: 30px;
+  line-height: 30px;
+  font-size: 22px;
+  font-weight: bold;
+  margin: 60px 0 40px;
+
+  &::before {
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: rgb(204, 144, 133);
+    border-radius: 50%;
+    margin-right: 20px;
+    margin-bottom: 3px;
+  }
+
+  &::after {
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: rgb(204, 144, 133);
+    border-radius: 50%;
+    margin-left: 20px;
+    margin-bottom: 3px;
+  }
+}
+
+article {
+  margin: 0 10vw;
+
+  .flex {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+
+    .member_pic {
+      text-align: center;
+      width: 25%;
+      min-width: 210px;
+
+      img {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+      }
+
+      h3 {
+        margin: 20px 0;
+        color: rgb(172, 71, 93);
+      }
+
+      .p {
+        padding: 5px 10px;
+        text-align: left;
+        font-size: 18px;
+        line-height: 26px;
+      }
+    }
+  }
+
+  .pi {
+    .member_pic {
+      width: 50%;
+
+      h3 {
+        color: #000;
+      }
+    }
+
+  }
+
+  .instructor {
+    .member_pic {
+      width: 100%;
+
+      h3 {
+        color: #000;
+      }
+    }
+  }
+
+  .groups {
+    .motto {
+      position: relative;
+      overflow: hidden;
+
+      &:hover .motto_detail {
+        transform: translateX(-50%) translateY(0);
+      }
+
+      .motto_detail {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(255, 255, 255, .4);
+        width: 200px;
+        height: 75px;
+        position: absolute;
+        padding: 3px 7px 10px;
+        font-size: 12px;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%) translateY(100%);
+        transition: .7s;
+
+
+      }
+
+      img {
+        border-radius: 0 !important;
+      }
+    }
+  }
+}
