@@ -1,0 +1,2787 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Model</title>
+  <link rel="stylesheet" href="../css/public.css">
+  <link rel="stylesheet" href="../css/wave.css">
+  <link rel="stylesheet" href="../css/model.css">
+</head>
+
+<body>
+  <!-- loading 动画 -->
+  <div class="loading-out">
+    <div class="loading-fade-in">
+      <div class="loading-container">
+        <div class="one common"></div>
+        <div class="two common"></div>
+        <div class="three common"></div>
+        <div class="four common"></div>
+        <div class="five common"></div>
+        <div class="six common"></div>
+        <div class="seven common"></div>
+        <div class="eight common"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 头部 -->
+  <header>
+    <ul>
+      <li><a href="../index.html">HOME</a></li>
+      <li><a href="#">TEAM</a>
+        <dl>
+          <dd><a href="../html/member.html">Members</a></dd>
+          <dd><a href="../html/attributions.html">Attributions</a></dd>
+          <dd><a href="../html/collaborations.html">Collaboration</a></dd>
+          <dd><a href="../html/partnership.html">Partnership</a></dd>
+        </dl>
+      </li>
+      <li><a href="#">PROJECT</a>
+        <dl>
+          <dd><a href="../html/description.html">Description</a></dd>
+          <dd><a href="../html/contribution.html">Contributions</a></dd>
+          <dd><a href="../html/proof-of-concept.html">Proof of Concept</a></dd>
+          <dd><a href="../html/implementation.html">Implementation</a></dd>
+          <dd><a href="../html/parts.html">Parts</a></dd>
+          <dd><a href="../html/notebook.html">Notebook</a></dd>
+        </dl>
+      </li>
+      <li><a href="#">LAB</a>
+        <dl>
+          <dd><a href="../html/result.html">Result</a></dd>
+          <dd><a href="../html/engineering.html">Engineering</a></dd>
+          <dd><a href="../html/model.html">Modeling</a></dd>
+        </dl>
+      </li>
+      <li><a href="../html/safety.html">SAFETY</a></li>
+      <li><a href="#">HUMAN PRACTICE</a>
+        <dl>
+          <dd><a href="../html/overview.html">Overview</a></dd>
+          <dd><a href="../html/human-practices.html">Intergrated Human Practice</a></dd>
+          <dd><a href="../html/communication.html">Education & Communication</a></dd>
+          <dd><a href="../html/sustainable.html">Sustainable</a></dd>
+        </dl>
+      </li>
+      <li><a href="../html/judging.html">JUDGING</a></li>
+    </ul>
+  </header>
+
+  <!-- 滚动条 -->
+  <div class="scrollBar">
+    <div class="back">BACK</div>
+    <div class="bar">
+      <img class="lazyload" data-src="../images/main-images/main1.png" alt="">
+    </div>
+  </div>
+
+  <nav>
+    <div class="container">
+      <a href="../index.html"><img class="lazyload" data-src="../images/main-images/logo.png" alt=""></a>
+      <span class="pic">Model</span>
+    </div>
+  </nav>
+  <div class="wave"></div>
+
+  <article>
+    <h3 style="text-align: center;font-weight: bold;font-size: 32px;">Overview</h3>
+    <p>Ahead of the wet lab, teammates from dry lab have constructed the model to simulate the actual situation and
+      make accurate prediction. Each set of the model was schemed according to the experiment design and the
+      physical requirement of our project. While the dry lab can lead the experiment schedule to a certain degree,
+      it also receives feedbacks from the result and makes further validation. </p>
+    <p>Basically, the dry lab has made achievement in two parts. The molecule dynamics characteristic of the
+      patchoulol synthase (PTS) was primarily concentrated, which corresponded to the experiment of directed
+      evolution. Through structure prediction and molecule docking, we discovered the potential active site during
+      the enzymatic reaction between PTS and farnesyl pyrophosphate (FPP, the precursor of patchoulol). Among all
+      the sites, Lys-425 from PTS presented the highest binding activity, which might serve as a complement to
+      previous study. The discovery further provided guidance for successive experiment with semi-rational and
+      rational design. Moreover, the feedback from these results is also under expectation. Apart from above, the
+      simulation for co-expression of patchoulol and lycopene was carried out as well. We characterized the
+      activity of species in a single module, and tending to expand the model to a systematic scope. Based on the
+      differential equation, we simulated the amount of both products responding to different light control
+      conditions. The model matched with the experiment result to a certain degree. While constructing the model,
+      we also gathered many precious experiences in this research fields, and some of our attempts are documented
+      after the text.</p>
+    <p>Hopefully, the model could provide accurate simulation for this co-expression system, and work as a
+      propagable toolkit for people to make optimization based on the physical requirement. </p>
+    <div class="oneimg">
+      <img class="lazyload" data-src="../images/model-images/model-1.png" alt="" style="width:25%">
+      <h5>Fig.1 The workflow of the dry lab</h5>
+    </div>
+    <p>The idea from dry lab was spread and examined while carrying out the human practice. So far, we have received
+      many precious feedbacks, which will improve our model and further promote the project. </p>
+    <h2>Molecular dynamics of patchoulol synthesis</h2>
+    <p>The molecular dynamics analysis reveals the possible active site during the enzymatic reaction between PTS
+      and FPP, thus providing guidance for further experiment with semi-rational or rational design. </p>
+    <p>With the antisepsis property from patchoulol, FUNCDYES can prevent the clothes from mildewing and rotting. In
+      the mevalonate pathway, the patchoulol is directly formed from FPP by the catalysis of PTS. Current study
+      has reported that the production of PTS remains in around 40~50 mg/L. Compared to lycopene, the patchoulol
+      causes slight oscillation, thus requiring a much stronger synthetase to drive the regulation. Here we
+      majorly performed the molecular dynamics analysis for the PTS, and presented the result through
+      visualization. Compared to the previous study <sup>[1]</sup>, we discovered a new active site with more
+      significant difference than of others.</p>
+    <div class="oneimg">
+      <img class="lazyload" data-src="../images/model-images/model-2.png" alt="" style="width:85%">
+      <h5>Fig.2 The workflow of this part</h5>
+    </div>
+    <h3><img class="lazyload" data-src="../images/description-images/small-leaf.png" alt="">Structure prediction</h3>
+    <p>The protein sequence of PTS was obtained from the National Centre for Biological Information
+      (NCBI)<sup>[2]</sup>, with the accession number as ALQ43502.1, and is identical to the one that we used in
+      the experiment. According to NCBI, the residues from 304th to 457th is considered as the active pocket,
+      which may exhibit the site for molecular docking. </p>
+    <p>Notably, according to the search result in Protein Data Bank (PDB), the crystal structure and relative data
+      of PTS remains lacked. To obtain the 3D structure and conduct molecular docking, the
+      Alpha-Fold<sup>[3]</sup> was applied to make prediction (here we took PTS as a single dimer).
+      PyMOL<sup>[4]</sup>, a widely-used visualization software, was then applied to visualize the 3D structure.
+      As is mentioned above, the chain that possibly acts as active pocket was plotted as yellow, while the rest
+      are blue: </p>
+    <div class="oneimg">
+      <img class="lazyload" data-src="../images/model-images/model-3.png" alt="" style="width:20%">
+      <h5>Fig.3 The 3D structure of PTS (yellow stands for the possible active pocket while the rest of chain are
+        blue)</h5>
+    </div>
+    <h3><img class="lazyload" data-src="../images/description-images/small-leaf.png" alt="">Investigation into the
+      active site</h3>
+    <p>Molecular docking presents the possible interaction between a certain pair of receptor and ligand, thus
+      revealing the potential active site in a certain degree. During the docking, the PTS is considered as the
+      receptor while the FPP is considered as the ligand. </p>
+    <p>Through the ZINC database<sup>[5]</sup>, we obtained the 3D structure of FPP with the code number as
+      ZINC12494625. Autodock<sup>[6]</sup>, a widely-used toolkit for predicting the interaction of ligands with
+      macromolecular targets, was then applied. In this procedure, AutoDock uses a semi-empirical free energy
+      force field to evaluate conformations. The force field was parameterized using a large number of
+      protein-inhibitor complexes. The evaluation of binding starts in an unbound conformation between the ligand
+      and protein. The intramolecular energetics are firstly estimated for the transition from the unbound states
+      to the conformation of the ligand and protein in the bound state. Then the intermolecular energetics of
+      combining the ligand-protein is evaluated. The force field includes six pair-wise evaluations (V) and an
+      estimate of the conformational entropy lost upon binding (ΔSconf): </p>
+    <div class="math0">
+      <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+        <mi mathvariant="normal">Δ</mi>
+        <mi>G</mi>
+        <mo>=</mo>
+        <mrow data-mjx-texclass="INNER">
+          <mo data-mjx-texclass="OPEN">(</mo>
+          <msubsup>
+            <mi>V</mi>
+            <mrow>
+              <mtext>bound&nbsp;</mtext>
+            </mrow>
+            <mrow>
+              <mi>L</mi>
+              <mo>-</mo>
+              <mi>L</mi>
+            </mrow>
+          </msubsup>
+          <mo>-</mo>
+          <msubsup>
+            <mi>V</mi>
+            <mrow>
+              <mtext>mboumd&nbsp;</mtext>
+            </mrow>
+            <mrow>
+              <mi>L</mi>
+              <mo>-</mo>
+              <mi>L</mi>
+            </mrow>
+          </msubsup>
+          <mo data-mjx-texclass="CLOSE">)</mo>
+        </mrow>
+        <mo>+</mo>
+        <mrow data-mjx-texclass="INNER">
+          <mo data-mjx-texclass="OPEN">(</mo>
+          <msubsup>
+            <mi>V</mi>
+            <mrow>
+              <mtext>bound&nbsp;</mtext>
+            </mrow>
+            <mrow>
+              <mi>P</mi>
+              <mo>-</mo>
+              <mi>P</mi>
+            </mrow>
+          </msubsup>
+          <mo>-</mo>
+          <msubsup>
+            <mi>V</mi>
+            <mrow>
+              <mtext>unboumd&nbsp;</mtext>
+            </mrow>
+            <mrow>
+              <mi>P</mi>
+              <mo>-</mo>
+              <mi>P</mi>
+            </mrow>
+          </msubsup>
+          <mo data-mjx-texclass="CLOSE">)</mo>
+        </mrow>
+        <mo>+</mo>
+        <mrow data-mjx-texclass="INNER">
+          <mo data-mjx-texclass="OPEN">(</mo>
+          <msubsup>
+            <mi>V</mi>
+            <mrow>
+              <mtext>bound&nbsp;</mtext>
+            </mrow>
+            <mrow>
+              <mi>P</mi>
+              <mo>-</mo>
+              <mi>L</mi>
+            </mrow>
+          </msubsup>
+          <mo>-</mo>
+          <msubsup>
+            <mi>V</mi>
+            <mrow>
+              <mtext>mbound&nbsp;</mtext>
+            </mrow>
+            <mrow>
+              <mi>P</mi>
+              <mo>-</mo>
+              <mi>L</mi>
+            </mrow>
+          </msubsup>
+          <mo>+</mo>
+          <mi mathvariant="normal">Δ</mi>
+          <msub>
+            <mi>S</mi>
+            <mrow>
+              <mtext>conf&nbsp;</mtext>
+            </mrow>
+          </msub>
+          <mo data-mjx-texclass="CLOSE">)</mo>
+        </mrow>
+      </math>
+    </div>
+    <p>where L refers to the ligand and P refers to the protein. Then, each of the pair-wise energetic terms
+      includes evaluations for dispersion/repulsion, hydrogen bonding, electrostatics, and desolation: </p>
+    <div class="math0">
+      <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+        <mi>V</mi>
+        <mo>=</mo>
+        <msub>
+          <mi>W</mi>
+          <mrow>
+            <mi>v</mi>
+            <mi>d</mi>
+            <mi>w</mi>
+          </mrow>
+        </msub>
+        <munder>
+          <mo data-mjx-texclass="OP">∑</mo>
+          <mrow>
+            <mi>i</mi>
+            <mo>,</mo>
+            <mi>j</mi>
+          </mrow>
+        </munder>
+        <mrow data-mjx-texclass="INNER">
+          <mo data-mjx-texclass="OPEN">(</mo>
+          <mfrac>
+            <msub>
+              <mi>A</mi>
+              <mrow>
+                <mi>i</mi>
+                <mi>j</mi>
+              </mrow>
+            </msub>
+            <msubsup>
+              <mi>r</mi>
+              <mrow>
+                <mi>i</mi>
+                <mi>j</mi>
+              </mrow>
+              <mrow>
+                <mn>12</mn>
+              </mrow>
+            </msubsup>
+          </mfrac>
+          <mo>-</mo>
+          <mfrac>
+            <msub>
+              <mi>B</mi>
+              <mrow>
+                <mi>i</mi>
+                <mi>j</mi>
+              </mrow>
+            </msub>
+            <msubsup>
+              <mi>r</mi>
+              <mrow>
+                <mi>i</mi>
+                <mi>j</mi>
+              </mrow>
+              <mrow>
+                <mn>6</mn>
+              </mrow>
+            </msubsup>
+          </mfrac>
+          <mo data-mjx-texclass="CLOSE">)</mo>
+        </mrow>
+        <mo>+</mo>
+        <msub>
+          <mi>W</mi>
+          <mrow>
+            <mtext>hbond&nbsp;</mtext>
+          </mrow>
+        </msub>
+        <munder>
+          <mo data-mjx-texclass="OP">∑</mo>
+          <mrow>
+            <mi>i</mi>
+            <mo>,</mo>
+            <mi>j</mi>
+          </mrow>
+        </munder>
+        <mi>E</mi>
+        <mo stretchy="false">(</mo>
+        <mi>t</mi>
+        <mo stretchy="false">)</mo>
+        <mrow data-mjx-texclass="INNER">
+          <mo data-mjx-texclass="OPEN">(</mo>
+          <mfrac>
+            <msub>
+              <mi>C</mi>
+              <mrow>
+                <mi>i</mi>
+                <mi>j</mi>
+              </mrow>
+            </msub>
+            <msubsup>
+              <mi>r</mi>
+              <mrow>
+                <mi>i</mi>
+                <mi>j</mi>
+              </mrow>
+              <mrow>
+                <mn>12</mn>
+              </mrow>
+            </msubsup>
+          </mfrac>
+          <mo>-</mo>
+          <mfrac>
+            <msub>
+              <mi>D</mi>
+              <mrow>
+                <mi>i</mi>
+                <mi>j</mi>
+              </mrow>
+            </msub>
+            <msubsup>
+              <mi>r</mi>
+              <mrow>
+                <mi>i</mi>
+                <mi>j</mi>
+              </mrow>
+              <mrow>
+                <mn>10</mn>
+              </mrow>
+            </msubsup>
+          </mfrac>
+          <mo data-mjx-texclass="CLOSE">)</mo>
+        </mrow>
+        <mo>+</mo>
+        <msub>
+          <mi>W</mi>
+          <mrow>
+            <mtext>elec&nbsp;</mtext>
+          </mrow>
+        </msub>
+        <munder>
+          <mo data-mjx-texclass="OP">∑</mo>
+          <mrow>
+            <mi>i</mi>
+            <mo>,</mo>
+            <mi>j</mi>
+          </mrow>
+        </munder>
+        <mfrac>
+          <mrow>
+            <msub>
+              <mi>q</mi>
+              <mrow>
+                <mi>i</mi>
+              </mrow>
+            </msub>
+            <msub>
+              <mi>q</mi>
+              <mrow>
+                <mi>j</mi>
+              </mrow>
+            </msub>
+          </mrow>
+          <mrow>
+            <mi>e</mi>
+            <mrow data-mjx-texclass="INNER">
+              <mo data-mjx-texclass="OPEN">(</mo>
+              <msub>
+                <mi>r</mi>
+                <mrow>
+                  <mi>i</mi>
+                  <mi>j</mi>
+                </mrow>
+              </msub>
+              <mo data-mjx-texclass="CLOSE">)</mo>
+            </mrow>
+            <msub>
+              <mi>r</mi>
+              <mrow>
+                <mi>i</mi>
+                <mi>j</mi>
+              </mrow>
+            </msub>
+          </mrow>
+        </mfrac>
+        <mo>+</mo>
+        <msub>
+          <mi>W</mi>
+          <mrow>
+            <mi>s</mi>
+            <mi>o</mi>
+            <mi>l</mi>
+          </mrow>
+        </msub>
+        <munder>
+          <mo data-mjx-texclass="OP">∑</mo>
+          <mrow>
+            <mi>i</mi>
+            <mo>,</mo>
+            <mi>j</mi>
+          </mrow>
+        </munder>
+        <mrow data-mjx-texclass="INNER">
+          <mo data-mjx-texclass="OPEN">(</mo>
+          <msub>
+            <mi>S</mi>
+            <mrow>
+              <mi>i</mi>
+            </mrow>
+          </msub>
+          <msub>
+            <mi>V</mi>
+            <mrow>
+              <mi>j</mi>
+            </mrow>
+          </msub>
+          <mo>+</mo>
+          <msub>
+            <mi>S</mi>
+            <mrow>
+              <mi>j</mi>
+            </mrow>
+          </msub>
+          <msub>
+            <mi>V</mi>
+            <mrow>
+              <mi>i</mi>
+            </mrow>
+          </msub>
+          <mo data-mjx-texclass="CLOSE">)</mo>
+        </mrow>
+        <msup>
+          <mi>e</mi>
+          <mrow>
+            <mrow data-mjx-texclass="INNER">
+              <mo data-mjx-texclass="OPEN">(</mo>
+              <mo>-</mo>
+              <msubsup>
+                <mi>r</mi>
+                <mrow>
+                  <mi>i</mi>
+                  <mi>j</mi>
+                </mrow>
+                <mrow>
+                  <mn>2</mn>
+                </mrow>
+              </msubsup>
+              <mrow>
+                <mo>&nbsp;/&nbsp;</mo>
+              </mrow>
+              <mn>2</mn>
+              <msup>
+                <mi>σ</mi>
+                <mrow>
+                  <mn>2</mn>
+                </mrow>
+              </msup>
+              <mo data-mjx-texclass="CLOSE">)</mo>
+            </mrow>
+          </mrow>
+        </msup>
+      </math>
+    </div>
+    <p>where the W is optimized weighting constants to calibrate the empirical free energy based on a set of
+      experimentally determined binding constants; r stands for the physical distance between two species; A and B
+      are parameters related to dispersion/repulsion interactions; C and D are assigned to give a maximal well
+      depth of 5 kcal/mol at 1.9Å for hydrogen bonds with oxygen and nitrogen, and a well depth of 1 kcal/mol at
+      2.5Å for hydrogen bonds with sulfur; E(t) provides directionality based on the angle t from ideal H-bonding
+      geometry; V represents the volume that surrounds a given atom and shelters it from solvent, and weighted by
+      a solvation parameter (S) and an exponential term with distance-weighting factor σ=3.5Å.<sup>[6]</sup></p>
+    <p>Autodock works under the PyMOL environment with other plugins including Autodock Vina and Mgltools. Here, we
+      adopted the version of Autodock4, Autodock Vina v.1.2<sup>[7]</sup>, and Mgltools v.1.5.7<sup>[8]</sup> to
+      configure the environment. By genetic algorithm, multiple docking sites have been found, along with various
+      energy parameters. Among them the Lys-425: HZ3 exhibited the highest potential, which might compile to the
+      previous finding. The result is presented as follows:</p>
+    <table id="table1">
+      <tr>
+        <th>Site</th>
+        <th>Binding Energy (kcal/mol) </th>
+        <th>Internal Energy (kcal/mol)</th>
+        <th>Electrostatic Energy (kcal/mol)</th>
+        <th>Torsional Energy (kcal/mol)</th>
+        <th>Ligand Efficiency (kcal/mol)</th>
+      </tr>
+      <tr>
+        <td>Lys-425: HZ3</td>
+        <td>-2.22</td>
+        <td>-5.5</td>
+        <td>-1.21</td>
+        <td>3.28</td>
+        <td>-0.09</td>
+      </tr>
+      <tr>
+        <td>LYS425: HZ1</td>
+        <td>-1.87</td>
+        <td>-5.15</td>
+        <td>-1.74</td>
+        <td>3.28</td>
+        <td>-0.08</td>
+      </tr>
+      <tr>
+        <td>LYS425: HZ3</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>LYS425: HZ1</td>
+        <td>-1.72</td>
+        <td>-5.0</td>
+        <td>-1.67</td>
+        <td>3.28</td>
+        <td>-0.07</td>
+      </tr>
+      <tr>
+        <td>LYS425: HZ3</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>LYS425: HZ1</td>
+        <td>1.45</td>
+        <td>-4.73</td>
+        <td>-0.63</td>
+        <td>3.28</td>
+        <td>-0.06</td>
+      </tr>
+      <tr>
+        <td>LYS425: HZ1</td>
+        <td>-1.43</td>
+        <td>-4.71</td>
+        <td>-1.69</td>
+        <td>3.28</td>
+        <td>-0.06</td>
+      </tr>
+      <tr>
+        <td>LYS425: HZ3</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+    </table>
+    <h5>Table.1 The top 5 active sites and their parameters</h5>
+    <p>Visualization was conducted through PyMOL, with the left representing for a whole view of the ligand-pair,
+      and the right representing a zoom view:</p>
+    <div class="oneimg">
+      <img class="lazyload" data-src="../images/model-images/model-4.png" alt="">
+      <h5>Fig.4 The Lys425: HZ3 docking site</h5>
+    </div>
+
+    <h2>Simulation for co-expression system</h2>
+    <p>Simulation was carried out for this co-expression system. Through the response to different light control
+      conditions, the model will guide the user to optimize the property of the product.</p>
+    <p>FUNCDYES contains a light-induced element to regulate the product. In this system, the time of
+      light-inducement, along with the carbon source and physical conditions were considered as the input signal.
+      Meanwhile, the amount of lycopene and patchoulol were taken as the output. In a single module that we
+      investigated, the time of light-inducement was the only input, and the amount of methanol was replaced by
+      that of the FPP. Based on the differential equation, the mass accumulation responding to different light
+      control conditions was simulated. By switching the condition, the user can predict and optimize the amount
+      of patchoulol and lycopene, and their ratio as well. Further, we attempted to reinforce the complexity and
+      extend the model to a comprehensive scope.</p>
+    <h3><img class="lazyload" data-src="../images/description-images/small-leaf.png" alt="">Abbreviation</h3>
+    <p>Following are the abbreviations in this part: </p>
+    <table id="table2">
+      <tr>
+        <th>Notation</th>
+        <th>Description</th>
+        <th>Value</th>
+        <th>Unit</th>
+      </tr>
+      <tr>
+        <td>t</td>
+        <td>Time</td>
+        <td>Variant</td>
+        <td>s</td>
+      </tr>
+      <tr>
+        <td>[el222]</td>
+        <td>Concentration of EL222 DNA sequence</td>
+        <td>Variant</td>
+        <td>mM</td>
+      </tr>
+      <tr>
+        <td>[el222 - mRNA]</td>
+        <td>Concentration of EL222 mRNA sequence</td>
+        <td>Variant</td>
+        <td>mM</td>
+      </tr>
+      <tr>
+        <td>[EL222]</td>
+        <td>Concentration of EL222 protein</td>
+        <td>Variant</td>
+        <td>mM</td>
+      </tr>
+      <tr>
+        <td>[EL222:pts]</td>
+        <td>Concentration of PTS DNA sequence binding with EL222</td>
+        <td>Variant</td>
+        <td>mM</td>
+      </tr>
+      <tr>
+        <td>[FPP]</td>
+        <td>Concentration of FPP</td>
+        <td>Variant</td>
+        <td>mM</td>
+      </tr>
+      <tr>
+        <td>[pts]</td>
+        <td>Concentration of PTS DNA sequence</td>
+        <td>Variant</td>
+        <td>mM</td>
+      </tr>
+      <tr>
+        <td>[pts - mRNA]</td>
+        <td>Concentration of PTS mRNA sequence</td>
+        <td>Variant</td>
+        <td>mM</td>
+      </tr>
+      <tr>
+        <td>[PTS]</td>
+        <td>Concentration of PTS</td>
+        <td>Variant</td>
+        <td>mM</td>
+      </tr>
+      <tr>
+        <td>[crtE]</td>
+        <td>Concentration of CrtE DNA sequence</td>
+        <td>Variant</td>
+        <td>mM</td>
+      </tr>
+      <tr>
+        <td>[crtE - mRNA]</td>
+        <td>Concentration of CrtE mRNA sequence</td>
+        <td>Variant</td>
+        <td>mM</td>
+      </tr>
+      <tr>
+        <td>[CrtE]</td>
+        <td>Concentration of CrtE protein</td>
+        <td>Variant</td>
+        <td>mM</td>
+      </tr>
+      <tr>
+        <td>[GGPP]</td>
+        <td>Concentration of GGPP</td>
+        <td>Variant</td>
+        <td>mM</td>
+      </tr>
+      <tr>
+        <td>[crtB]</td>
+        <td>Concentration of CrtB DNA sequence</td>
+        <td>Variant</td>
+        <td>mM</td>
+      </tr>
+      <tr>
+        <td>[crtB - mRNA]</td>
+        <td>Concentration of CrtB mRNA sequence</td>
+        <td>Variant</td>
+        <td>mM</td>
+      </tr>
+      <tr>
+        <td>[CrtB]</td>
+        <td>Concentration of CrtB protein</td>
+        <td>Variant</td>
+        <td>mM</td>
+      </tr>
+      <tr>
+        <td>[Phytopene]</td>
+        <td>Concentration of Phytopene</td>
+        <td>Variant</td>
+        <td>mM</td>
+      </tr>
+      <tr>
+        <td>[crtI]</td>
+        <td>Concentration of CrtI DNA sequence</td>
+        <td>Variant</td>
+        <td>mM</td>
+      </tr>
+      <tr>
+        <td>[crtI - mRNA]</td>
+        <td>Concentration of CrtI mRNA sequence</td>
+        <td>Variant</td>
+        <td>mM</td>
+      </tr>
+      <tr>
+        <td>[CrtI]</td>
+        <td>Concentration of CrtI protein</td>
+        <td>Variant</td>
+        <td>mM</td>
+      </tr>
+      <tr>
+        <td>Lycopene</td>
+        <td>Concentration of lycopene</td>
+        <td>Variant</td>
+        <td>mM</td>
+      </tr>
+      <tr>
+        <td>[k<sub>crtE</sub>]</td>
+        <td>CrtE transcription</td>
+        <td>-</td>
+        <td>s<sup>-1</sup></td>
+      </tr>
+      <tr>
+        <td>[k<sub>crtB</sub>]</td>
+        <td>CrtB transcription</td>
+        <td>-</td>
+        <td>s<sup>-1</sup></td>
+      </tr>
+      <tr>
+        <td>[k<sub>crtI</sub>]</td>
+        <td>CrtI translation</td>
+        <td>-</td>
+        <td>s<sup>-1</sup></td>
+      </tr>
+      <tr>
+        <td>[k<sub>el222-mRNA</sub>]</td>
+        <td>EL222 translation</td>
+        <td>1.2*10<sup>-2</sup></td>
+        <td>s<sup>-1</sup></td>
+      </tr>
+      <tr>
+        <td>[k<sub>pts-mrna</sub>]</td>
+        <td>PTS translation</td>
+        <td>4*10<sup>-4</sup></td>
+        <td>s<sup>-1</sup></td>
+      </tr>
+      <tr>
+        <td>[k<sub>crtB-mrna</sub>]</td>
+        <td>CrtB translation</td>
+        <td>1*10<sup>-2</sup></td>
+        <td>s<sup>-1</sup></td>
+      </tr>
+      <tr>
+        <td>[k<sub>crtE-mrna</sub>]</td>
+        <td>CrtE translation</td>
+        <td>3.5*10<sup>-2</sup></td>
+        <td>s<sup>-1</sup></td>
+      </tr>
+      <tr>
+        <td>[k<sub>crtI-mrna</sub>]</td>
+        <td>CrtI translation</td>
+        <td>2.8*10<sup>-2</sup></td>
+        <td>s<sup>-1</sup></td>
+      </tr>
+      <tr>
+        <td>[k<sub>EL222</sub>]</td>
+        <td>Binding rate of EL222: pts complex</td>
+        <td>2.2*10<sup>4</sup></td>
+        <td>M<sup>-1</sup>s<sup>-1</sup></td>
+      </tr>
+      <tr>
+        <td>[k<sub>m PTS</sub>]</td>
+        <td>Michaelis constant of patchoulol expression</td>
+        <td>8*10<sup>-3</sup></td>
+        <td>mM</td>
+      </tr>
+      <tr>
+        <td>[k<sub>CrtE</sub>]</td>
+        <td>GGPP expression rate</td>
+        <td>-</td>
+        <td>s<sup>-1</sup></td>
+      </tr>
+      <tr>
+        <td>[k<sub>-CrtE</sub>]</td>
+        <td>GGPP disassociation rate</td>
+        <td>-</td>
+        <td>M<sup>-1</sup>s<sup>-1</sup></td>
+      </tr>
+      <tr>
+        <td>[k<sub>m CrtB</sub>]</td>
+        <td>Michaelis constant of phytoene expression</td>
+        <td>3.74*10<sup>-1</sup></td>
+        <td>mM</td>
+      </tr>
+      <tr>
+        <td>[k<sub>m CrtI</sub>]</td>
+        <td>Michaelis constant of lycopene expression</td>
+        <td>3.33*10<sup>-1</sup></td>
+        <td>mM</td>
+      </tr>
+      <tr>
+        <td>[V<sub>m PTS</sub>]</td>
+        <td>Maximum reaction rate of patchoulol</td>
+        <td>0.072</td>
+        <td>Ms<sup>-1</sup></td>
+      </tr>
+      <tr>
+        <td>[V<sub>m CrtB</sub>]</td>
+        <td>Maximum reaction rate of phytoene</td>
+        <td>-</td>
+        <td>Ms<sup>-1</sup></td>
+      </tr>
+      <tr>
+        <td>[V<sub>m CrtI</sub>]</td>
+        <td>Maximum reaction rate of lycopene</td>
+        <td>-</td>
+        <td>Ms<sup>-1</sup></td>
+      </tr>
+    </table>
+    <h5>Table.2 The abbreviation of this part</h5>
+    <h3><img class="lazyload" data-src="../images/description-images/small-leaf.png" alt="">Ordinary differential
+      equation for light-induced switch</h3>
+    <p>EL222, a photosensitive protein is introduced to regulate the expression of patchoulol. The protein remains a
+      monomer structure under the dark environment. When exposed under the blue light (normally 460~480 nm), the
+      structure changes and binds to DNA sequence easily. The information of these parts has been recorded in our
+      website. </p>
+    <div class="oneimg">
+      <img class="lazyload" data-src="../images/model-images/model-5.png" alt="" style="width:35%">
+      <h5>Fig.5 The light-induced reaction by EL222<sup>[8]</sup></h5>
+    </div>
+    <p>Under the experimental condition with blue light of 475nm inducing, following the ODEs characterize the light
+      induced reaction: </p>
+    <div class="math">
+      <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+        <mtable columnalign="left" columnspacing="1em" rowspacing="4pt">
+          <mtr>
+            <mtd>
+              <mfrac>
+                <mrow>
+                  <mi>d</mi>
+                  <mo stretchy="false">[</mo>
+                  <mi>e</mi>
+                  <mi>l</mi>
+                  <mn>222</mn>
+                  <mo stretchy="false">]</mo>
+                </mrow>
+                <mrow>
+                  <mi>d</mi>
+                  <mi>t</mi>
+                </mrow>
+              </mfrac>
+              <mo>=</mo>
+              <msub>
+                <mi>k</mi>
+                <mrow>
+                  <mi>e</mi>
+                  <mi>l</mi>
+                  <mn>222</mn>
+                </mrow>
+              </msub>
+              <mo stretchy="false">[</mo>
+              <mtext>&nbsp;el222&nbsp;</mtext>
+              <mo stretchy="false">]</mo>
+            </mtd>
+          </mtr>
+          <mtr>
+            <mtd>
+              <mfrac>
+                <mrow>
+                  <mi>d</mi>
+                  <mo stretchy="false">[</mo>
+                  <mi>e</mi>
+                  <mi>l</mi>
+                  <mn>222</mn>
+                  <mo>-</mo>
+                  <mi>m</mi>
+                  <mi>R</mi>
+                  <mi>N</mi>
+                  <mi>A</mi>
+                  <mo stretchy="false">]</mo>
+                </mrow>
+                <mrow>
+                  <mi>d</mi>
+                  <mi>t</mi>
+                </mrow>
+              </mfrac>
+              <mo>=</mo>
+              <msub>
+                <mi>k</mi>
+                <mrow>
+                  <mi>e</mi>
+                  <mi>l</mi>
+                  <mn>222</mn>
+                  <mo>-</mo>
+                  <mi>m</mi>
+                  <mi>R</mi>
+                  <mi>N</mi>
+                  <mi>A</mi>
+                </mrow>
+              </msub>
+              <mo stretchy="false">[</mo>
+              <mtext>&nbsp;el222]&nbsp;</mtext>
+            </mtd>
+          </mtr>
+          <mtr>
+            <mtd>
+              <mfrac>
+                <mrow>
+                  <mi>d</mi>
+                  <mo stretchy="false">[</mo>
+                  <mrow data-mjx-texclass="OP">
+                    <mi mathvariant="normal">E</mi>
+                    <mi mathvariant="normal">L</mi>
+                    <mn>222</mn>
+                    <mo>:</mo>
+                  </mrow>
+                  <mo data-mjx-texclass="NONE">⁡</mo>
+                  <mi>p</mi>
+                  <mi>t</mi>
+                  <mi>s</mi>
+                  <mo stretchy="false">]</mo>
+                </mrow>
+                <mrow>
+                  <mi>d</mi>
+                  <mi>t</mi>
+                </mrow>
+              </mfrac>
+              <mo>=</mo>
+              <msub>
+                <mi>k</mi>
+                <mrow>
+                  <mtext>EL222&nbsp;</mtext>
+                </mrow>
+              </msub>
+              <mo stretchy="false">[</mo>
+              <mrow data-mjx-texclass="OP">
+                <mi mathvariant="normal">E</mi>
+                <mi mathvariant="normal">L</mi>
+                <mn>222</mn>
+                <mo stretchy="false">]</mo>
+              </mrow>
+              <mo data-mjx-texclass="NONE">⁡</mo>
+              <mo stretchy="false">[</mo>
+              <mi>p</mi>
+              <mi>t</mi>
+              <mi>s</mi>
+              <mo stretchy="false">]</mo>
+            </mtd>
+          </mtr>
+        </mtable>
+      </math>
+    </div>
+    <div class="math" style="font-size: 18px;">
+      with initial conditions:
+      <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+        <mtable columnalign="left" columnspacing="1em" rowspacing="4pt">
+          <mtr>
+            <mtd>
+              <mi>t</mi>
+              <mo>=</mo>
+              <mn>0</mn>
+              <mo>;</mo>
+              <mstyle scriptlevel="0">
+                <mspace width="1em">
+                </mspace>
+              </mstyle>
+              <mo stretchy="false">[</mo>
+              <mtext>el]222</mtext>
+              <mo>=</mo>
+              <mn>1</mn>
+              <mrow>
+                <mi mathvariant="normal">m</mi>
+                <mi mathvariant="normal">M</mi>
+              </mrow>
+              <mo>;</mo>
+              <mstyle scriptlevel="0">
+                <mspace width="1em"></mspace>
+              </mstyle>
+              <mtext>el222-mRNA</mtext>
+              <mo>=</mo>
+              <mn>0</mn>
+              <mo>;</mo>
+            </mtd>
+          </mtr>
+          <mtr>
+            <mtd>
+              <mtext>EL222</mtext>
+              <mo>=</mo>
+              <mn>0</mn>
+              <mo>;</mo>
+              <mstyle scriptlevel="0">
+                <mspace width="1em"></mspace>
+              </mstyle>
+              <mo stretchy="false">[</mo>
+              <mi>p</mi>
+              <mi>t</mi>
+              <mi>s</mi>
+              <mo stretchy="false">]</mo>
+              <mo>=</mo>
+              <mn>1</mn>
+              <mrow>
+                <mi mathvariant="normal">m</mi>
+                <mi mathvariant="normal">M;</mi>
+              </mrow>
+              <mstyle scriptlevel="0">
+                <mspace width="1em"></mspace>
+              </mstyle>
+              <mrow>
+                <mo stretchy="false">[</mo>
+                <mrow data-mjx-texclass="OP">
+                  <mi mathvariant="normal">E</mi>
+                  <mi mathvariant="normal">L</mi>
+                  <mn>222</mn>
+                  <mo>:</mo>
+                </mrow>
+                <mo data-mjx-texclass="NONE">⁡</mo>
+                <mi>p</mi>
+                <mi>t</mi>
+                <mi>s</mi>
+                <mo stretchy="false">]</mo>
+                <mo>=</mo>
+                <mn>0</mn>
+              </mrow>
+            </mtd>
+          </mtr>
+        </mtable>
+      </math>
+    </div>
+    <p>other notations have been declar in Table.2. According to a previous study<sup>[9]</sup>, the reaction rate
+      constant of the DNA binding step was independent of the DNA sequence, regardless of binding affinity. The binding
+      efficiency shows no significant difference among various sequence. Hence, we estimated the
+      k<sub>EL222</sub> as 2.2*10<sup>4</sup> M<sup>-1</sup>s<sup>-1</sup>. </p>
+    <h3><img class="lazyload" data-src="../images/description-images/small-leaf.png" alt="">Simulation for the
+      co-expression in a single module</h3>
+    <p>In this single system containing the FPP, the patchoulol synthesis module, and the lycopene synthesis module, the
+      inducement of light is considered as the input, while the response of lycopene and patchoulol synthesis can be
+      taken as the output. We primarily inspected the kinetic characteristic in such a single module.</p>
+    <div class="oneimg">
+      <img class="lazyload" data-src="../images/model-images/model-6.png" alt="">
+      <h5>Fig.6 Gene circuit in the single module</h5>
+    </div>
+    <p>Based on previous studies, we constructed the ODEs and examined the kinetic data. The ODEs for product synthesis
+      are listed here: </p>
+    <div class="math" style="font-size: 18px;">
+      <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+        <mtable columnalign="left" columnspacing="1em" rowspacing="4pt">
+          <mtr>
+            <mtd>
+              <mfrac>
+                <mrow>
+                  <mrow>
+                    <mi mathvariant="normal">d</mi>
+                  </mrow>
+                  <mrow data-mjx-texclass="INNER">
+                    <mo data-mjx-texclass="OPEN">(</mo>
+                    <mi>F</mi>
+                    <mi>P</mi>
+                    <mi>P</mi>
+                    <mo data-mjx-texclass="CLOSE">)</mo>
+                  </mrow>
+                </mrow>
+                <mrow>
+                  <mrow>
+                    <mi mathvariant="normal">d</mi>
+                  </mrow>
+                  <mi>t</mi>
+                </mrow>
+              </mfrac>
+              <mo>=</mo>
+              <mo>-</mo>
+              <mrow data-mjx-texclass="INNER">
+                <mo data-mjx-texclass="OPEN">(</mo>
+                <msub>
+                  <mi>V</mi>
+                  <mrow>
+                    <mi>m</mi>
+                    <mi>P</mi>
+                    <mi>T</mi>
+                    <mi>S</mi>
+                  </mrow>
+                </msub>
+                <mo>∗</mo>
+                <mfrac>
+                  <mrow>
+                    <mi>F</mi>
+                    <mi>P</mi>
+                    <mi>P</mi>
+                  </mrow>
+                  <mrow>
+                    <msub>
+                      <mi>K</mi>
+                      <mrow>
+                        <mi>m</mi>
+                        <mi>P</mi>
+                        <mi>T</mi>
+                        <mi>S</mi>
+                      </mrow>
+                    </msub>
+                    <mo>+</mo>
+                    <mi>F</mi>
+                    <mi>P</mi>
+                    <mi>P</mi>
+                  </mrow>
+                </mfrac>
+                <mo data-mjx-texclass="CLOSE">)</mo>
+              </mrow>
+              <mo>-</mo>
+              <mrow data-mjx-texclass="INNER">
+                <mo data-mjx-texclass="OPEN">(</mo>
+                <msub>
+                  <mi>k</mi>
+                  <mrow>
+                    <mi>c</mi>
+                    <mi>r</mi>
+                    <mi>t</mi>
+                    <mi>E</mi>
+                  </mrow>
+                </msub>
+                <mo>∗</mo>
+                <mi>c</mi>
+                <mi>r</mi>
+                <mi>t</mi>
+                <mi>E</mi>
+                <mo>∗</mo>
+                <mi>F</mi>
+                <mi>P</mi>
+                <mi>P</mi>
+                <mo>-</mo>
+                <msub>
+                  <mi>k</mi>
+                  <mrow>
+                    <mo>-</mo>
+                    <mi>c</mi>
+                    <mi>r</mi>
+                    <mi>t</mi>
+                    <mi>E</mi>
+                  </mrow>
+                </msub>
+                <mo>∗</mo>
+                <mi>G</mi>
+                <mi>G</mi>
+                <mi>P</mi>
+                <mi>P</mi>
+                <mo data-mjx-texclass="CLOSE">)</mo>
+              </mrow>
+            </mtd>
+          </mtr>
+          <mtr>
+            <mtd>
+              <mfrac>
+                <mrow>
+                  <mi>d</mi>
+                  <mo stretchy="false">[</mo>
+                  <mrow>
+                    <mi mathvariant="normal">P</mi>
+                    <mi mathvariant="normal">T</mi>
+                    <mi mathvariant="normal">S</mi>
+                  </mrow>
+                  <mo stretchy="false">]</mo>
+                </mrow>
+                <mrow>
+                  <mi>d</mi>
+                  <mi>t</mi>
+                </mrow>
+              </mfrac>
+              <mo>=</mo>
+              <mrow data-mjx-texclass="INNER">
+                <mo data-mjx-texclass="OPEN">(</mo>
+                <msub>
+                  <mi>k</mi>
+                  <mrow>
+                    <mi>p</mi>
+                    <mi>t</mi>
+                    <mi>s</mi>
+                  </mrow>
+                </msub>
+                <mo>-</mo>
+                <mi>m</mi>
+                <mi>ω</mi>
+                <mi>a</mi>
+                <mo>∗</mo>
+                <mo stretchy="false">[</mo>
+                <mi>p</mi>
+                <mi>t</mi>
+                <mi>s</mi>
+                <mo>-</mo>
+                <mi>m</mi>
+                <mi>R</mi>
+                <mi>N</mi>
+                <mi>A</mi>
+                <mo stretchy="false">]</mo>
+                <mo data-mjx-texclass="CLOSE">)</mo>
+              </mrow>
+              <mo>-</mo>
+              <mrow data-mjx-texclass="INNER">
+                <mo data-mjx-texclass="OPEN">(</mo>
+                <msub>
+                  <mi>V</mi>
+                  <mrow>
+                    <msub>
+                      <mi>m</mi>
+                      <mrow>
+                        <mrow>
+                          <mi mathvariant="normal">P</mi>
+                          <mi mathvariant="normal">T</mi>
+                          <mi mathvariant="normal">S</mi>
+                        </mrow>
+                      </mrow>
+                    </msub>
+                  </mrow>
+                </msub>
+                <mo>∗</mo>
+                <mfrac>
+                  <mrow>
+                    <mo stretchy="false">[</mo>
+                    <mrow>
+                      <mi mathvariant="normal">F</mi>
+                      <mi mathvariant="normal">P</mi>
+                      <mi mathvariant="normal">P</mi>
+                    </mrow>
+                    <mo stretchy="false">]</mo>
+                  </mrow>
+                  <mrow>
+                    <msub>
+                      <mi>K</mi>
+                      <mrow>
+                        <msub>
+                          <mi>m</mi>
+                          <mrow>
+                            <mrow>
+                              <mi mathvariant="normal">P</mi>
+                              <mi mathvariant="normal">T</mi>
+                              <mi mathvariant="normal">S</mi>
+                            </mrow>
+                          </mrow>
+                        </msub>
+                      </mrow>
+                    </msub>
+                    <mo>+</mo>
+                    <mo stretchy="false">[</mo>
+                    <mrow>
+                      <mi mathvariant="normal">F</mi>
+                      <mi mathvariant="normal">P</mi>
+                      <mi mathvariant="normal">P</mi>
+                    </mrow>
+                    <mo stretchy="false">]</mo>
+                  </mrow>
+                </mfrac>
+                <mo data-mjx-texclass="CLOSE">)</mo>
+              </mrow>
+            </mtd>
+          </mtr>
+          <mtr>
+            <mtd>
+              <mfrac>
+                <mrow>
+                  <mi>d</mi>
+                  <mo stretchy="false">[</mo>
+                  <mtext>&nbsp;Patchoulol&nbsp;</mtext>
+                  <mo stretchy="false">]</mo>
+                </mrow>
+                <mrow>
+                  <mi>d</mi>
+                  <mi>t</mi>
+                </mrow>
+              </mfrac>
+              <mo>=</mo>
+              <mrow data-mjx-texclass="INNER">
+                <mo data-mjx-texclass="OPEN">(</mo>
+                <msub>
+                  <mi>V</mi>
+                  <mrow>
+                    <msub>
+                      <mi>m</mi>
+                      <mrow>
+                        <mrow>
+                          <mi mathvariant="normal">P</mi>
+                          <mi mathvariant="normal">T</mi>
+                          <mi mathvariant="normal">S</mi>
+                        </mrow>
+                      </mrow>
+                    </msub>
+                  </mrow>
+                </msub>
+                <mo>∗</mo>
+                <mfrac>
+                  <mrow>
+                    <mo stretchy="false">[</mo>
+                    <mrow>
+                      <mi mathvariant="normal">F</mi>
+                      <mi mathvariant="normal">P</mi>
+                      <mi mathvariant="normal">P</mi>
+                    </mrow>
+                    <mo stretchy="false">]</mo>
+                  </mrow>
+                  <mrow>
+                    <msub>
+                      <mi>K</mi>
+                      <mrow>
+                        <msub>
+                          <mi>m</mi>
+                          <mrow>
+                            <mrow>
+                              <mi mathvariant="normal">P</mi>
+                              <mi mathvariant="normal">T</mi>
+                              <mi mathvariant="normal">S</mi>
+                            </mrow>
+                          </mrow>
+                        </msub>
+                      </mrow>
+                    </msub>
+                    <mo>+</mo>
+                    <mo stretchy="false">[</mo>
+                    <mrow>
+                      <mi mathvariant="normal">F</mi>
+                      <mi mathvariant="normal">P</mi>
+                      <mi mathvariant="normal">P</mi>
+                    </mrow>
+                    <mo stretchy="false">]</mo>
+                  </mrow>
+                </mfrac>
+                <mo data-mjx-texclass="CLOSE">)</mo>
+              </mrow>
+            </mtd>
+          </mtr>
+          <mtr>
+            <mtd>
+              <mfrac>
+                <mrow>
+                  <mi>d</mi>
+                  <mo stretchy="false">[</mo>
+                  <mi>c</mi>
+                  <mi>r</mi>
+                  <mi>t</mi>
+                  <mi>E</mi>
+                  <mo stretchy="false">]</mo>
+                </mrow>
+                <mrow>
+                  <mi>d</mi>
+                  <mi>t</mi>
+                </mrow>
+              </mfrac>
+              <mo>=</mo>
+              <mo>-</mo>
+              <mrow data-mjx-texclass="INNER">
+                <mo data-mjx-texclass="OPEN">(</mo>
+                <msub>
+                  <mi>k</mi>
+                  <mrow>
+                    <mi>c</mi>
+                    <mi>r</mi>
+                    <mi>t</mi>
+                    <mi>E</mi>
+                  </mrow>
+                </msub>
+                <mo>∗</mo>
+                <mo stretchy="false">[</mo>
+                <mi>c</mi>
+                <mi>r</mi>
+                <mi>t</mi>
+                <mi>E</mi>
+                <mo stretchy="false">]</mo>
+                <mo data-mjx-texclass="CLOSE">)</mo>
+              </mrow>
+            </mtd>
+          </mtr>
+          <mtr>
+            <mtd>
+              <mfrac>
+                <mrow>
+                  <mi>d</mi>
+                  <mo stretchy="false">[</mo>
+                  <mi>c</mi>
+                  <mi>r</mi>
+                  <mi>t</mi>
+                  <mi>E</mi>
+                  <mo>-</mo>
+                  <mi>m</mi>
+                  <mi>R</mi>
+                  <mi>N</mi>
+                  <mi>A</mi>
+                  <mo stretchy="false">]</mo>
+                </mrow>
+                <mrow>
+                  <mi>d</mi>
+                  <mi>t</mi>
+                </mrow>
+              </mfrac>
+              <mo>=</mo>
+              <mrow data-mjx-texclass="INNER">
+                <mo data-mjx-texclass="OPEN">(</mo>
+                <msub>
+                  <mi>k</mi>
+                  <mrow>
+                    <mi>r</mi>
+                    <mi>t</mi>
+                    <mi>E</mi>
+                  </mrow>
+                </msub>
+                <mo>∗</mo>
+                <mo stretchy="false">[</mo>
+                <mi>c</mi>
+                <mi>r</mi>
+                <mi>t</mi>
+                <mi>E</mi>
+                <mo stretchy="false">]</mo>
+                <mo data-mjx-texclass="CLOSE">)</mo>
+              </mrow>
+              <mo>-</mo>
+              <mrow data-mjx-texclass="INNER">
+                <mo data-mjx-texclass="OPEN">(</mo>
+                <msub>
+                  <mi>k</mi>
+                  <mrow>
+                    <mi>ct</mi>
+                    <mo data-mjx-texclass="NONE">⁡</mo>
+                    <mi>E</mi>
+                    <mo>-</mo>
+                    <mi>man</mi>
+                    <mo data-mjx-texclass="NONE">⁡</mo>
+                    <mi>α</mi>
+                  </mrow>
+                </msub>
+                <mo>∗</mo>
+                <mo stretchy="false">[</mo>
+                <mi>c</mi>
+                <mi>r</mi>
+                <mi>t</mi>
+                <mi>E</mi>
+                <mo>-</mo>
+                <mi>m</mi>
+                <mi>R</mi>
+                <mi>N</mi>
+                <mi>A</mi>
+                <mo stretchy="false">]</mo>
+                <mo data-mjx-texclass="CLOSE">)</mo>
+              </mrow>
+            </mtd>
+          </mtr>
+          <mtr>
+            <mtd>
+              <mfrac>
+                <mrow>
+                  <mi>d</mi>
+                  <mo stretchy="false">[</mo>
+                  <mrow>
+                    <mi mathvariant="normal">C</mi>
+                    <mi mathvariant="normal">r</mi>
+                    <mi mathvariant="normal">t</mi>
+                    <mi mathvariant="normal">E</mi>
+                  </mrow>
+                  <mo stretchy="false">]</mo>
+                </mrow>
+                <mrow>
+                  <mi>d</mi>
+                  <mi>t</mi>
+                </mrow>
+              </mfrac>
+              <mo>=</mo>
+              <mrow data-mjx-texclass="INNER">
+                <mo data-mjx-texclass="OPEN">(</mo>
+                <msub>
+                  <mi>k</mi>
+                  <mrow>
+                    <mtext>rrtE&nbsp;</mtext>
+                    <mo>-</mo>
+                    <mi>man</mi>
+                    <mo data-mjx-texclass="NONE">⁡</mo>
+                    <mi>a</mi>
+                  </mrow>
+                </msub>
+                <mo>∗</mo>
+                <mo stretchy="false">[</mo>
+                <mi>c</mi>
+                <mi>r</mi>
+                <mi>t</mi>
+                <mi>E</mi>
+                <mo>-</mo>
+                <mi>m</mi>
+                <mi>R</mi>
+                <mi>N</mi>
+                <mi>A</mi>
+                <mo stretchy="false">]</mo>
+                <mo data-mjx-texclass="CLOSE">)</mo>
+              </mrow>
+              <mo>-</mo>
+              <mrow data-mjx-texclass="INNER">
+                <mo data-mjx-texclass="OPEN">(</mo>
+                <msub>
+                  <mi>k</mi>
+                  <mrow>
+                    <mrow>
+                      <mi mathvariant="normal">G</mi>
+                      <mi mathvariant="normal">r</mi>
+                      <mi mathvariant="normal">t</mi>
+                    </mrow>
+                  </mrow>
+                </msub>
+                <mo>∗</mo>
+                <mo stretchy="false">[</mo>
+                <mrow>
+                  <mi mathvariant="normal">C</mi>
+                  <mi mathvariant="normal">r</mi>
+                  <mi mathvariant="normal">t</mi>
+                  <mi mathvariant="normal">E</mi>
+                </mrow>
+                <mo stretchy="false">]</mo>
+                <mo>∗</mo>
+                <mo stretchy="false">[</mo>
+                <mrow>
+                  <mi mathvariant="normal">F</mi>
+                  <mi mathvariant="normal">P</mi>
+                  <mi mathvariant="normal">P</mi>
+                </mrow>
+                <mo stretchy="false">]</mo>
+                <mo>-</mo>
+                <msub>
+                  <mi>k</mi>
+                  <mrow>
+                    <mo>-</mo>
+                    <mrow>
+                      <mi mathvariant="normal">C</mi>
+                      <mi mathvariant="normal">r</mi>
+                    </mrow>
+                    <mi>E</mi>
+                  </mrow>
+                </msub>
+                <mo>∗</mo>
+                <mo stretchy="false">[</mo>
+                <mrow>
+                  <mi mathvariant="normal">G</mi>
+                  <mi mathvariant="normal">G</mi>
+                  <mi mathvariant="normal">P</mi>
+                  <mi mathvariant="normal">P</mi>
+                </mrow>
+                <mo stretchy="false">]</mo>
+                <mo data-mjx-texclass="CLOSE">)</mo>
+              </mrow>
+            </mtd>
+          </mtr>
+          <mtr>
+            <mtd>
+              <mfrac>
+                <mrow>
+                  <mi>d</mi>
+                  <mo stretchy="false">[</mo>
+                  <mrow>
+                    <mi mathvariant="normal">F</mi>
+                    <mi mathvariant="normal">P</mi>
+                    <mi mathvariant="normal">P</mi>
+                  </mrow>
+                  <mo stretchy="false">]</mo>
+                </mrow>
+                <mrow>
+                  <mi>d</mi>
+                  <mi>t</mi>
+                </mrow>
+              </mfrac>
+              <mo>=</mo>
+              <mo>-</mo>
+              <mrow data-mjx-texclass="INNER">
+                <mo data-mjx-texclass="OPEN">(</mo>
+                <msub>
+                  <mi>V</mi>
+                  <mrow>
+                    <mi>m</mi>
+                    <mrow>
+                      <mi mathvariant="normal">P</mi>
+                      <mi mathvariant="normal">T</mi>
+                      <mi mathvariant="normal">S</mi>
+                    </mrow>
+                  </mrow>
+                </msub>
+                <mo>∗</mo>
+                <mfrac>
+                  <mrow>
+                    <mo stretchy="false">[</mo>
+                    <mrow>
+                      <mi mathvariant="normal">F</mi>
+                      <mi mathvariant="normal">P</mi>
+                      <mi mathvariant="normal">P</mi>
+                    </mrow>
+                    <mo stretchy="false">]</mo>
+                  </mrow>
+                  <mrow>
+                    <msub>
+                      <mi>K</mi>
+                      <mrow>
+                        <msub>
+                          <mi>m</mi>
+                          <mrow>
+                            <mrow>
+                              <mi mathvariant="normal">P</mi>
+                              <mi mathvariant="normal">T</mi>
+                              <mi mathvariant="normal">S</mi>
+                            </mrow>
+                          </mrow>
+                        </msub>
+                      </mrow>
+                    </msub>
+                    <mo>+</mo>
+                    <mo stretchy="false">[</mo>
+                    <mrow>
+                      <mi mathvariant="normal">F</mi>
+                      <mi mathvariant="normal">P</mi>
+                      <mi mathvariant="normal">P</mi>
+                    </mrow>
+                    <mo stretchy="false">]</mo>
+                  </mrow>
+                </mfrac>
+                <mo data-mjx-texclass="CLOSE">)</mo>
+              </mrow>
+              <mo>-</mo>
+              <mrow data-mjx-texclass="INNER">
+                <mo data-mjx-texclass="OPEN">(</mo>
+                <msub>
+                  <mi>k</mi>
+                  <mrow>
+                    <mrow>
+                      <mi mathvariant="normal">G</mi>
+                      <mi mathvariant="normal">r</mi>
+                      <mi mathvariant="normal">t</mi>
+                      <mi mathvariant="normal">E</mi>
+                    </mrow>
+                  </mrow>
+                </msub>
+                <mo>∗</mo>
+                <mo stretchy="false">[</mo>
+                <mrow>
+                  <mi mathvariant="normal">C</mi>
+                  <mi mathvariant="normal">r</mi>
+                  <mi mathvariant="normal">t</mi>
+                  <mi mathvariant="normal">E</mi>
+                </mrow>
+                <mo stretchy="false">]</mo>
+                <mo>∗</mo>
+                <mo stretchy="false">[</mo>
+                <mrow>
+                  <mi mathvariant="normal">F</mi>
+                  <mi mathvariant="normal">P</mi>
+                  <mi mathvariant="normal">P</mi>
+                </mrow>
+                <mo stretchy="false">]</mo>
+                <mo>-</mo>
+                <msub>
+                  <mi>k</mi>
+                  <mrow>
+                    <mo>-</mo>
+                    <mrow>
+                      <mi mathvariant="normal">C</mi>
+                      <mi mathvariant="normal">r</mi>
+                    </mrow>
+                    <mi>t</mi>
+                    <mi>E</mi>
+                  </mrow>
+                </msub>
+                <mo>∗</mo>
+                <mo stretchy="false">[</mo>
+                <mrow>
+                  <mi mathvariant="normal">G</mi>
+                  <mi mathvariant="normal">G</mi>
+                  <mi mathvariant="normal">P</mi>
+                  <mi mathvariant="normal">P</mi>
+                </mrow>
+                <mo stretchy="false">]</mo>
+                <mo data-mjx-texclass="CLOSE">)</mo>
+              </mrow>
+            </mtd>
+          </mtr>
+          <mtr>
+            <mtd>
+              <mfrac>
+                <mrow>
+                  <mi>d</mi>
+                  <mo stretchy="false">[</mo>
+                  <mi>c</mi>
+                  <mi>r</mi>
+                  <mi>t</mi>
+                  <mi>B</mi>
+                  <mo stretchy="false">]</mo>
+                </mrow>
+                <mrow>
+                  <mi>d</mi>
+                  <mi>t</mi>
+                </mrow>
+              </mfrac>
+              <mo>=</mo>
+              <mo>-</mo>
+              <mrow data-mjx-texclass="INNER">
+                <mo data-mjx-texclass="OPEN">(</mo>
+                <msub>
+                  <mi>k</mi>
+                  <mrow>
+                    <mi>crt</mi>
+                    <mo data-mjx-texclass="NONE">⁡</mo>
+                    <mi>B</mi>
+                  </mrow>
+                </msub>
+                <mo>∗</mo>
+                <mo stretchy="false">[</mo>
+                <mi>c</mi>
+                <mi>r</mi>
+                <mi>t</mi>
+                <mi>B</mi>
+                <mo stretchy="false">]</mo>
+                <mo data-mjx-texclass="CLOSE">)</mo>
+              </mrow>
+            </mtd>
+          </mtr>
+          <mtr>
+            <mtd>
+              <mfrac>
+                <mrow>
+                  <mi>d</mi>
+                  <mo stretchy="false">[</mo>
+                  <mi>c</mi>
+                  <mi>r</mi>
+                  <mi>t</mi>
+                  <mi>B</mi>
+                  <mo>-</mo>
+                  <mi>m</mi>
+                  <mi>R</mi>
+                  <mi>N</mi>
+                  <mi>A</mi>
+                  <mo stretchy="false">]</mo>
+                </mrow>
+                <mrow>
+                  <mi>d</mi>
+                  <mi>t</mi>
+                </mrow>
+              </mfrac>
+              <mo>=</mo>
+              <mrow data-mjx-texclass="INNER">
+                <mo data-mjx-texclass="OPEN">(</mo>
+                <msub>
+                  <mi>k</mi>
+                  <mrow>
+                    <mi>c</mi>
+                    <mi>r</mi>
+                    <mi>t</mi>
+                    <mi>B</mi>
+                  </mrow>
+                </msub>
+                <mo>∗</mo>
+                <mo stretchy="false">[</mo>
+                <mi>c</mi>
+                <mi>r</mi>
+                <mi>t</mi>
+                <mi>B</mi>
+                <mo stretchy="false">]</mo>
+                <mo data-mjx-texclass="CLOSE">)</mo>
+              </mrow>
+              <mo>-</mo>
+              <mrow data-mjx-texclass="INNER">
+                <mo data-mjx-texclass="OPEN">(</mo>
+                <msub>
+                  <mi>k</mi>
+                  <mrow>
+                    <mtext>crtB-mana&nbsp;</mtext>
+                  </mrow>
+                </msub>
+                <mo>∗</mo>
+                <mo stretchy="false">[</mo>
+                <mi>c</mi>
+                <mi>r</mi>
+                <mi>t</mi>
+                <mi>B</mi>
+                <mo>-</mo>
+                <mi>m</mi>
+                <mi>R</mi>
+                <mi>N</mi>
+                <mi>A</mi>
+                <mo stretchy="false">]</mo>
+                <mo data-mjx-texclass="CLOSE">)</mo>
+              </mrow>
+            </mtd>
+          </mtr>
+          <mtr>
+            <mtd>
+              <mfrac>
+                <mrow>
+                  <mi>d</mi>
+                  <mo stretchy="false">[</mo>
+                  <mrow>
+                    <mi mathvariant="normal">C</mi>
+                    <mi mathvariant="normal">r</mi>
+                    <mi mathvariant="normal">t</mi>
+                    <mi mathvariant="normal">B</mi>
+                  </mrow>
+                  <mo stretchy="false">]</mo>
+                </mrow>
+                <mrow>
+                  <mi>d</mi>
+                  <mi>t</mi>
+                </mrow>
+              </mfrac>
+              <mo>=</mo>
+              <mrow data-mjx-texclass="INNER">
+                <mo data-mjx-texclass="OPEN">(</mo>
+                <msub>
+                  <mi>k</mi>
+                  <mrow>
+                    <mi>c</mi>
+                    <mi>r</mi>
+                    <mi>t</mi>
+                    <mi>B</mi>
+                    <mo>-</mo>
+                    <mi>mana</mi>
+                  </mrow>
+                </msub>
+                <mo>∗</mo>
+                <mo stretchy="false">[</mo>
+                <mi>crtB</mi>
+                <mo>-</mo>
+                <mi>m</mi>
+                <mi>R</mi>
+                <mi>N</mi>
+                <mi>A</mi>
+                <mo stretchy="false">]</mo>
+                <mo data-mjx-texclass="CLOSE">)</mo>
+              </mrow>
+              <mo>-</mo>
+              <mrow data-mjx-texclass="INNER">
+                <mo data-mjx-texclass="OPEN">(</mo>
+                <msub>
+                  <mi>V</mi>
+                  <mrow>
+                    <msub>
+                      <mi>m</mi>
+                      <mrow>
+                        <mrow>
+                          <mi mathvariant="normal">G</mi>
+                          <mi mathvariant="normal">r</mi>
+                          <mi mathvariant="normal">B</mi>
+                        </mrow>
+                      </mrow>
+                    </msub>
+                  </mrow>
+                </msub>
+                <mo>∗</mo>
+                <mfrac>
+                  <mrow>
+                    <mo stretchy="false">[</mo>
+                    <mrow>
+                      <mi mathvariant="normal">G</mi>
+                      <mi mathvariant="normal">G</mi>
+                      <mi mathvariant="normal">P</mi>
+                      <mi mathvariant="normal">P</mi>
+                    </mrow>
+                    <mo stretchy="false">]</mo>
+                  </mrow>
+                  <mrow>
+                    <msub>
+                      <mi>K</mi>
+                      <mrow>
+                        <msub>
+                          <mi>m</mi>
+                          <mrow>
+                            <mrow>
+                              <mi mathvariant="normal">G</mi>
+                              <mi mathvariant="normal">r</mi>
+                              <mi mathvariant="normal">t</mi>
+                              <mi mathvariant="normal">B</mi>
+                            </mrow>
+                          </mrow>
+                        </msub>
+                      </mrow>
+                    </msub>
+                    <mo>+</mo>
+                    <mo stretchy="false">[</mo>
+                    <mrow>
+                      <mi mathvariant="normal">G</mi>
+                      <mi mathvariant="normal">G</mi>
+                      <mi mathvariant="normal">P</mi>
+                      <mi mathvariant="normal">P</mi>
+                    </mrow>
+                    <mo stretchy="false">]</mo>
+                  </mrow>
+                </mfrac>
+                <mo data-mjx-texclass="CLOSE">)</mo>
+              </mrow>
+            </mtd>
+          </mtr>
+          <mtr>
+            <mtd>
+              <mfrac>
+                <mrow>
+                  <mi>d</mi>
+                  <mo stretchy="false">[</mo>
+                  <mrow>
+                    <mi mathvariant="normal">G</mi>
+                    <mi mathvariant="normal">G</mi>
+                    <mi mathvariant="normal">P</mi>
+                    <mi mathvariant="normal">P</mi>
+                  </mrow>
+                  <mo stretchy="false">]</mo>
+                </mrow>
+                <mrow>
+                  <mi>d</mi>
+                  <mi>t</mi>
+                </mrow>
+              </mfrac>
+              <mo>=</mo>
+              <mrow data-mjx-texclass="INNER">
+                <mo data-mjx-texclass="OPEN">(</mo>
+                <msub>
+                  <mi>k</mi>
+                  <mrow>
+                    <mrow>
+                      <mi mathvariant="normal">G</mi>
+                      <mi mathvariant="normal">t</mi>
+                      <mi mathvariant="normal">t</mi>
+                    </mrow>
+                  </mrow>
+                </msub>
+                <mo>∗</mo>
+                <mo stretchy="false">[</mo>
+                <mrow>
+                  <mi mathvariant="normal">G</mi>
+                  <mi mathvariant="normal">r</mi>
+                  <mi mathvariant="normal">t</mi>
+                  <mi mathvariant="normal">E</mi>
+                </mrow>
+                <mo stretchy="false">]</mo>
+                <mo>∗</mo>
+                <mo stretchy="false">[</mo>
+                <mrow>
+                  <mi mathvariant="normal">F</mi>
+                  <mi mathvariant="normal">P</mi>
+                  <mi mathvariant="normal">P</mi>
+                </mrow>
+                <mo stretchy="false">]</mo>
+                <mo>-</mo>
+                <msub>
+                  <mi>k</mi>
+                  <mrow>
+                    <mo>-</mo>
+                    <mrow>
+                      <mi mathvariant="normal">C</mi>
+                      <mi mathvariant="normal">r</mi>
+                    </mrow>
+                    <mi>E</mi>
+                  </mrow>
+                </msub>
+                <mo>∗</mo>
+                <mo stretchy="false">[</mo>
+                <mrow>
+                  <mi mathvariant="normal">G</mi>
+                  <mi mathvariant="normal">G</mi>
+                  <mi mathvariant="normal">P</mi>
+                  <mi mathvariant="normal">P</mi>
+                </mrow>
+                <mo stretchy="false">]</mo>
+                <mo data-mjx-texclass="CLOSE">)</mo>
+              </mrow>
+              <mo>-</mo>
+              <mrow data-mjx-texclass="INNER">
+                <mo data-mjx-texclass="OPEN">(</mo>
+                <msub>
+                  <mi>V</mi>
+                  <mrow>
+                    <msub>
+                      <mi>m</mi>
+                      <mrow>
+                        <mrow>
+                          <mi mathvariant="normal">G</mi>
+                          <mi mathvariant="normal">r</mi>
+                        </mrow>
+                        <mi>B</mi>
+                      </mrow>
+                    </msub>
+                  </mrow>
+                </msub>
+                <mo>∗</mo>
+                <mfrac>
+                  <mrow>
+                    <mo stretchy="false">[</mo>
+                    <mrow>
+                      <mi mathvariant="normal">G</mi>
+                      <mi mathvariant="normal">G</mi>
+                      <mi mathvariant="normal">P</mi>
+                      <mi mathvariant="normal">P</mi>
+                    </mrow>
+                    <mo stretchy="false">]</mo>
+                  </mrow>
+                  <mrow>
+                    <msub>
+                      <mi>K</mi>
+                      <mrow>
+                        <msub>
+                          <mi>m</mi>
+                          <mrow>
+                            <mrow>
+                              <mi mathvariant="normal">G</mi>
+                              <mi mathvariant="normal">r</mi>
+                              <mi mathvariant="normal">t</mi>
+                              <mi mathvariant="normal">B</mi>
+                            </mrow>
+                          </mrow>
+                        </msub>
+                      </mrow>
+                    </msub>
+                    <mo>+</mo>
+                    <mo stretchy="false">[</mo>
+                    <mrow>
+                      <mi mathvariant="normal">G</mi>
+                      <mi mathvariant="normal">G</mi>
+                      <mi mathvariant="normal">P</mi>
+                      <mi mathvariant="normal">P</mi>
+                    </mrow>
+                    <mo stretchy="false">]</mo>
+                  </mrow>
+                </mfrac>
+                <mo data-mjx-texclass="CLOSE">)</mo>
+              </mrow>
+            </mtd>
+          </mtr>
+          <mtr>
+            <mtd>
+              <mfrac>
+                <mrow>
+                  <mi>d</mi>
+                  <mo stretchy="false">[</mo>
+                  <mtext>&nbsp;Phytoene&nbsp;</mtext>
+                  <mo stretchy="false">]</mo>
+                </mrow>
+                <mrow>
+                  <mi>d</mi>
+                  <mi>t</mi>
+                </mrow>
+              </mfrac>
+              <mo>=</mo>
+              <mrow data-mjx-texclass="INNER">
+                <mo data-mjx-texclass="OPEN">(</mo>
+                <msub>
+                  <mi>V</mi>
+                  <mrow>
+                    <msub>
+                      <mi>m</mi>
+                      <mrow>
+                        <mrow>
+                          <mi mathvariant="normal">G</mi>
+                          <mi mathvariant="normal">r</mi>
+                        </mrow>
+                        <mi>B</mi>
+                      </mrow>
+                    </msub>
+                  </mrow>
+                </msub>
+                <mo>∗</mo>
+                <mfrac>
+                  <mrow>
+                    <mo stretchy="false">[</mo>
+                    <mrow>
+                      <mi mathvariant="normal">G</mi>
+                      <mi mathvariant="normal">G</mi>
+                      <mi mathvariant="normal">P</mi>
+                      <mi mathvariant="normal">P</mi>
+                    </mrow>
+                    <mo stretchy="false">]</mo>
+                  </mrow>
+                  <mrow>
+                    <msub>
+                      <mi>K</mi>
+                      <mrow>
+                        <msub>
+                          <mi>m</mi>
+                          <mrow>
+                            <mrow>
+                              <mi mathvariant="normal">G</mi>
+                            </mrow>
+                            <mtext>&nbsp;BB&nbsp;</mtext>
+                          </mrow>
+                        </msub>
+                      </mrow>
+                    </msub>
+                    <mo>+</mo>
+                    <mo stretchy="false">[</mo>
+                    <mrow>
+                      <mi mathvariant="normal">G</mi>
+                      <mi mathvariant="normal">G</mi>
+                      <mi mathvariant="normal">P</mi>
+                      <mi mathvariant="normal">P</mi>
+                    </mrow>
+                    <mo stretchy="false">]</mo>
+                  </mrow>
+                </mfrac>
+                <mo data-mjx-texclass="CLOSE">)</mo>
+              </mrow>
+              <mo>-</mo>
+              <mrow data-mjx-texclass="INNER">
+                <mo data-mjx-texclass="OPEN">(</mo>
+                <msub>
+                  <mi>V</mi>
+                  <mrow>
+                    <msub>
+                      <mi>m</mi>
+                      <mrow>
+                        <mrow>
+                          <mi mathvariant="normal">G</mi>
+                          <mi mathvariant="normal">r</mi>
+                          <mi mathvariant="normal">t</mi>
+                          <mi mathvariant="normal">I</mi>
+                        </mrow>
+                      </mrow>
+                    </msub>
+                  </mrow>
+                </msub>
+                <mo>∗</mo>
+                <mfrac>
+                  <mrow>
+                    <mtext>&nbsp;[Phytoene&nbsp;</mtext>
+                    <mo stretchy="false">]</mo>
+                  </mrow>
+                  <mrow>
+                    <msub>
+                      <mi>K</mi>
+                      <mrow>
+                        <msub>
+                          <mi>m</mi>
+                          <mrow>
+                            <mrow>
+                              <mi mathvariant="normal">G</mi>
+                            </mrow>
+                            <mi>t</mi>
+                          </mrow>
+                        </msub>
+                      </mrow>
+                    </msub>
+                    <mo>+</mo>
+                    <mo stretchy="false">[</mo>
+                    <mtext>&nbsp;Phytoene&nbsp;</mtext>
+                    <mo stretchy="false">]</mo>
+                  </mrow>
+                </mfrac>
+                <mo data-mjx-texclass="CLOSE">)</mo>
+              </mrow>
+            </mtd>
+          </mtr>
+          <mtr>
+            <mtd>
+              <mfrac>
+                <mrow>
+                  <mi>d</mi>
+                  <mo stretchy="false">[</mo>
+                  <mi>c</mi>
+                  <mi>r</mi>
+                  <mi>t</mi>
+                  <mi>I</mi>
+                  <mo stretchy="false">]</mo>
+                </mrow>
+                <mrow>
+                  <mi>d</mi>
+                  <mi>t</mi>
+                </mrow>
+              </mfrac>
+              <mo>=</mo>
+              <mo>-</mo>
+              <mrow data-mjx-texclass="INNER">
+                <mo data-mjx-texclass="OPEN">(</mo>
+                <msub>
+                  <mi>k</mi>
+                  <mrow>
+                    <mtext>crtI&nbsp;</mtext>
+                  </mrow>
+                </msub>
+                <mo>∗</mo>
+                <mo stretchy="false">[</mo>
+                <mi>c</mi>
+                <mi>r</mi>
+                <mi>t</mi>
+                <mi>I</mi>
+                <mo stretchy="false">]</mo>
+                <mo data-mjx-texclass="CLOSE">)</mo>
+              </mrow>
+            </mtd>
+          </mtr>
+          <mtr>
+            <mtd>
+              <mfrac>
+                <mrow>
+                  <mi>d</mi>
+                  <mo stretchy="false">[</mo>
+                  <mi>c</mi>
+                  <mi>r</mi>
+                  <mi>t</mi>
+                  <mi>I</mi>
+                  <mo>-</mo>
+                  <mi>m</mi>
+                  <mi>R</mi>
+                  <mi>N</mi>
+                  <mi>A</mi>
+                  <mo stretchy="false">]</mo>
+                </mrow>
+                <mrow>
+                  <mi>d</mi>
+                  <mi>t</mi>
+                </mrow>
+              </mfrac>
+              <mo>=</mo>
+              <mrow data-mjx-texclass="INNER">
+                <mo data-mjx-texclass="OPEN">(</mo>
+                <msub>
+                  <mi>k</mi>
+                  <mrow>
+                    <mi>c</mi>
+                    <mi>t</mi>
+                    <mi>I</mi>
+                  </mrow>
+                </msub>
+                <mo>∗</mo>
+                <mo stretchy="false">[</mo>
+                <mi>c</mi>
+                <mi>r</mi>
+                <mi>t</mi>
+                <mi>I</mi>
+                <mo stretchy="false">]</mo>
+                <mo data-mjx-texclass="CLOSE">)</mo>
+              </mrow>
+              <mo>-</mo>
+              <mrow data-mjx-texclass="INNER">
+                <mo data-mjx-texclass="OPEN">(</mo>
+                <msub>
+                  <mi>k</mi>
+                  <mrow>
+                    <mi>c</mi>
+                    <mi>r</mi>
+                    <mi>t</mi>
+                    <mi>I</mi>
+                    <mi>m</mi>
+                    <mi>m</mi>
+                    <mi>a</mi>
+                  </mrow>
+                </msub>
+                <mo>∗</mo>
+                <mo stretchy="false">[</mo>
+                <mi>c</mi>
+                <mi>r</mi>
+                <mi>t</mi>
+                <mi>I</mi>
+                <mo>-</mo>
+                <mi>m</mi>
+                <mi>R</mi>
+                <mi>N</mi>
+                <mi>A</mi>
+                <mo stretchy="false">]</mo>
+                <mo data-mjx-texclass="CLOSE">)</mo>
+              </mrow>
+            </mtd>
+          </mtr>
+          <mtr>
+            <mtd>
+              <mfrac>
+                <mrow>
+                  <mi>d</mi>
+                  <mo stretchy="false">[</mo>
+                  <mtext>&nbsp;CrtI&nbsp;</mtext>
+                  <mo stretchy="false">]</mo>
+                </mrow>
+                <mrow>
+                  <mi>d</mi>
+                  <mi>t</mi>
+                </mrow>
+              </mfrac>
+              <mo>=</mo>
+              <mrow data-mjx-texclass="INNER">
+                <mo data-mjx-texclass="OPEN">(</mo>
+                <msub>
+                  <mi>k</mi>
+                  <mrow>
+                    <mi>r</mi>
+                    <mi>t</mi>
+                    <mi>I</mi>
+                    <mo>-</mo>
+                    <mi>m</mi>
+                    <mi>a</mi>
+                    <mi>n</mi>
+                    <mi>a</mi>
+                  </mrow>
+                </msub>
+                <mo>∗</mo>
+                <mo stretchy="false">[</mo>
+                <mi>c</mi>
+                <mi>r</mi>
+                <mi>t</mi>
+                <mi>I</mi>
+                <mo>-</mo>
+                <mi>m</mi>
+                <mi>R</mi>
+                <mi>N</mi>
+                <mi>A</mi>
+                <mo stretchy="false">]</mo>
+                <mo data-mjx-texclass="CLOSE">)</mo>
+              </mrow>
+              <mo>-</mo>
+              <mrow data-mjx-texclass="INNER">
+                <mo data-mjx-texclass="OPEN">(</mo>
+                <msub>
+                  <mi>V</mi>
+                  <mrow>
+                    <mi>m</mi>
+                  </mrow>
+                </msub>
+                <msub>
+                  <mrow></mrow>
+                  <mrow>
+                    <mi>G</mi>
+                    <mo>+</mo>
+                    <mn>1</mn>
+                  </mrow>
+                </msub>
+                <mo>∗</mo>
+                <mfrac>
+                  <mrow>
+                    <mtext>&nbsp;[Phytoene&nbsp;</mtext>
+                    <mo stretchy="false">]</mo>
+                  </mrow>
+                  <mrow>
+                    <msub>
+                      <mi>K</mi>
+                      <mrow>
+                        <msub>
+                          <mi>m</mi>
+                          <mrow>
+                            <mi>G</mi>
+                            <mo>+</mo>
+                            <mn>1</mn>
+                          </mrow>
+                        </msub>
+                      </mrow>
+                    </msub>
+                    <mo>+</mo>
+                    <mo stretchy="false">[</mo>
+                    <mtext>&nbsp;Phytoene&nbsp;</mtext>
+                    <mo stretchy="false">]</mo>
+                  </mrow>
+                </mfrac>
+                <mo data-mjx-texclass="CLOSE">)</mo>
+              </mrow>
+            </mtd>
+          </mtr>
+          <mtr>
+            <mtd>
+              <mfrac>
+                <mrow>
+                  <mi>d</mi>
+                  <mo stretchy="false">[</mo>
+                  <mtext>&nbsp;Lycopene&nbsp;</mtext>
+                  <mo stretchy="false">]</mo>
+                </mrow>
+                <mrow>
+                  <mi>d</mi>
+                  <mi>t</mi>
+                </mrow>
+              </mfrac>
+              <mo>=</mo>
+              <mrow data-mjx-texclass="INNER">
+                <mo data-mjx-texclass="OPEN">(</mo>
+                <msub>
+                  <mi>V</mi>
+                  <mrow>
+                    <msub>
+                      <mi>m</mi>
+                      <mrow>
+                        <mi>G</mi>
+                      </mrow>
+                    </msub>
+                    <mtext>&nbsp;GII&nbsp;</mtext>
+                  </mrow>
+                </msub>
+                <mo>∗</mo>
+                <mfrac>
+                  <mrow>
+                    <mtext>&nbsp;[Phytoene&nbsp;</mtext>
+                    <mo stretchy="false">]</mo>
+                  </mrow>
+                  <mrow>
+                    <msub>
+                      <mi>K</mi>
+                      <mrow>
+                        <msub>
+                          <mi>m</mi>
+                          <mrow>
+                            <mi>G</mi>
+                            <mtext>&nbsp;G&nbsp;</mtext>
+                          </mrow>
+                        </msub>
+                      </mrow>
+                    </msub>
+                    <mo>+</mo>
+                    <mo stretchy="false">[</mo>
+                    <mtext>&nbsp;[Phytoene&nbsp;</mtext>
+                    <mo stretchy="false">]</mo>
+                  </mrow>
+                </mfrac>
+                <mo data-mjx-texclass="CLOSE">)</mo>
+              </mrow>
+            </mtd>
+          </mtr>
+        </mtable>
+      </math>
+    </div>
+    <div class="math" style="font-size: 18px;">
+      with initial conditions: <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+        <mtable columnalign="left" columnspacing="1em" rowspacing="4pt">
+          <mtr>
+            <mtd>
+              <mi>t</mi>
+              <mo>=</mo>
+              <mn>0</mn>
+              <mo>;</mo>
+              <mstyle scriptlevel="0">
+                <mspace width="1em"></mspace>
+              </mstyle>
+              <mo stretchy="false">[</mo>
+              <mrow>
+                <mi mathvariant="normal">F</mi>
+                <mi mathvariant="normal">P</mi>
+                <mi mathvariant="normal">P</mi>
+              </mrow>
+              <mo stretchy="false">]</mo>
+              <mo>=</mo>
+              <mn>100</mn>
+              <mi>m</mi>
+              <mi>M</mi>
+              <mo>;</mo>
+              <mstyle scriptlevel="0">
+                <mspace width="1em"></mspace>
+              </mstyle>
+              <mo stretchy="false">[</mo>
+              <mi>p</mi>
+              <mi>t</mi>
+              <mi>s</mi>
+              <mo stretchy="false">]</mo>
+              <mo>=</mo>
+              <mn>100</mn>
+              <mi>m</mi>
+              <mi>M</mi>
+              <mo>;</mo>
+              <mstyle scriptlevel="0">
+                <mspace width="1em"></mspace>
+              </mstyle>
+            </mtd>
+          </mtr>
+          <mtr>
+            <mtd>
+              <mo stretchy="false">[</mo>
+              <mi>p</mi>
+              <mi>t</mi>
+              <mi>s</mi>
+              <mo>-</mo>
+              <mi>m</mi>
+              <mi>R</mi>
+              <mi>N</mi>
+              <mi>A</mi>
+              <mo stretchy="false">]</mo>
+              <mo>=</mo>
+              <mn>0</mn>
+              <mo>;</mo>
+              <mstyle scriptlevel="0">
+                <mspace width="1em"></mspace>
+              </mstyle>
+              <mo stretchy="false">[</mo>
+              <mrow>
+                <mi mathvariant="normal">P</mi>
+                <mi mathvariant="normal">T</mi>
+                <mi mathvariant="normal">S</mi>
+              </mrow>
+              <mo stretchy="false">]</mo>
+              <mo>=</mo>
+              <mn>0</mn>
+              <mo>;</mo>
+              <mstyle scriptlevel="0">
+                <mspace width="1em"></mspace>
+              </mstyle>
+              <mo stretchy="false">[</mo>
+              <mrow>
+                <mi mathvariant="normal">c</mi>
+                <mi mathvariant="normal">r</mi>
+                <mi mathvariant="normal">t</mi>
+                <mi mathvariant="normal">E</mi>
+              </mrow>
+              <mo stretchy="false">]</mo>
+              <mo>=</mo>
+              <mn>100</mn>
+              <mrow>
+                <mi mathvariant="normal">m</mi>
+                <mi mathvariant="normal">M</mi>
+              </mrow>
+              <mo>;</mo>
+              <mstyle scriptlevel="0">
+                <mspace width="1em"></mspace>
+              </mstyle>
+            </mtd>
+          </mtr>
+          <mtr>
+            <mtd>
+              <mo stretchy="false">[</mo>
+              <mrow>
+                <mi mathvariant="normal">c</mi>
+                <mi mathvariant="normal">r</mi>
+                <mi mathvariant="normal">t</mi>
+                <mi mathvariant="normal">E</mi>
+              </mrow>
+              <mo>-</mo>
+              <mi>m</mi>
+              <mi>R</mi>
+              <mi>N</mi>
+              <mi>A</mi>
+              <mo stretchy="false">]</mo>
+              <mo>=</mo>
+              <mn>0</mn>
+              <mo>;</mo>
+              <mstyle scriptlevel="0">
+                <mspace width="1em"></mspace>
+              </mstyle>
+              <mo stretchy="false">[</mo>
+              <mrow>
+                <mi mathvariant="normal">C</mi>
+                <mi mathvariant="normal">r</mi>
+                <mi mathvariant="normal">t</mi>
+                <mi mathvariant="normal">E</mi>
+              </mrow>
+              <mo stretchy="false">]</mo>
+              <mo>=</mo>
+              <mn>0</mn>
+              <mo>;</mo>
+              <mstyle scriptlevel="0">
+                <mspace width="1em"></mspace>
+              </mstyle>
+              <mo stretchy="false">[</mo>
+              <mrow>
+                <mi mathvariant="normal">G</mi>
+                <mi mathvariant="normal">G</mi>
+                <mi mathvariant="normal">P</mi>
+                <mi mathvariant="normal">P</mi>
+              </mrow>
+              <mo stretchy="false">]</mo>
+              <mo>=</mo>
+              <mn>0</mn>
+              <mo>;</mo>
+              <mstyle scriptlevel="0">
+                <mspace width="1em"></mspace>
+              </mstyle>
+            </mtd>
+          </mtr>
+          <mtr>
+            <mtd>
+              <mo stretchy="false">[</mo>
+              <mrow>
+                <mi mathvariant="normal">c</mi>
+                <mi mathvariant="normal">r</mi>
+                <mi mathvariant="normal">t</mi>
+                <mi mathvariant="normal">B</mi>
+              </mrow>
+              <mo stretchy="false">]</mo>
+              <mo>=</mo>
+              <mn>100</mn>
+              <mrow>
+                <mi mathvariant="normal">m</mi>
+                <mi mathvariant="normal">M</mi>
+              </mrow>
+              <mo>;</mo>
+              <mstyle scriptlevel="0">
+                <mspace width="1em"></mspace>
+              </mstyle>
+              <mo stretchy="false">[</mo>
+              <mrow>
+                <mi mathvariant="normal">c</mi>
+                <mi mathvariant="normal">r</mi>
+                <mi mathvariant="normal">t</mi>
+                <mi mathvariant="normal">B</mi>
+              </mrow>
+              <mo>-</mo>
+              <mi>m</mi>
+              <mi>R</mi>
+              <mi>N</mi>
+              <mi>A</mi>
+              <mo stretchy="false">]</mo>
+              <mo>=</mo>
+              <mn>0</mn>
+              <mo>;</mo>
+              <mstyle scriptlevel="0">
+                <mspace width="1em"></mspace>
+              </mstyle>
+              <mo stretchy="false">[</mo>
+              <mrow>
+                <mi mathvariant="normal">C</mi>
+                <mi mathvariant="normal">r</mi>
+                <mi mathvariant="normal">t</mi>
+                <mi mathvariant="normal">B</mi>
+              </mrow>
+              <mo stretchy="false">]</mo>
+              <mo>=</mo>
+              <mn>0</mn>
+              <mo>;</mo>
+            </mtd>
+          </mtr>
+          <mtr>
+            <mtd>
+              <mo stretchy="false">[</mo>
+              <mtext>Phytopene</mtext>
+              <mo stretchy="false">]</mo>
+              <mo>=</mo>
+              <mn>0</mn>
+              <mo>;</mo>
+              <mstyle scriptlevel="0">
+                <mspace width="1em"></mspace>
+              </mstyle>
+              <mo stretchy="false">[</mo>
+              <mrow>
+                <mi mathvariant="normal">c</mi>
+                <mi mathvariant="normal">r</mi>
+                <mi mathvariant="normal">t</mi>
+                <mi mathvariant="normal">I</mi>
+              </mrow>
+              <mo stretchy="false">]</mo>
+              <mo>=</mo>
+              <mn>100</mn>
+              <mrow>
+                <mi mathvariant="normal">m</mi>
+                <mi mathvariant="normal">M</mi>
+              </mrow>
+              <mo>;</mo>
+              <mstyle scriptlevel="0">
+                <mspace width="1em"></mspace>
+              </mstyle>
+            </mtd>
+          </mtr>
+          <mtr>
+            <mtd>
+              <mo stretchy="false">[</mo>
+              <mrow>
+                <mi mathvariant="normal">c</mi>
+                <mi mathvariant="normal">r</mi>
+                <mi mathvariant="normal">t</mi>
+                <mi mathvariant="normal">I</mi>
+              </mrow>
+              <mo>-</mo>
+              <mi>m</mi>
+              <mi>R</mi>
+              <mi>N</mi>
+              <mi>A</mi>
+              <mo stretchy="false">]</mo>
+              <mo>=</mo>
+              <mn>0</mn>
+              <mo>;</mo>
+              <mstyle scriptlevel="0">
+                <mspace width="1em"></mspace>
+              </mstyle>
+              <mo stretchy="false">[</mo>
+              <mrow>
+                <mi mathvariant="normal">C</mi>
+                <mi mathvariant="normal">r</mi>
+                <mi mathvariant="normal">t</mi>
+                <mi mathvariant="normal">I</mi>
+              </mrow>
+              <mo stretchy="false">]</mo>
+              <mo>=</mo>
+              <mn>0</mn>
+              <mo>;</mo>
+              <mstyle scriptlevel="0">
+                <mspace width="1em"></mspace>
+              </mstyle>
+              <mo stretchy="false">[</mo>
+              <mrow>
+                <mi mathvariant="normal">L</mi>
+                <mi mathvariant="normal">y</mi>
+                <mi mathvariant="normal">c</mi>
+                <mi mathvariant="normal">o</mi>
+                <mi mathvariant="normal">p</mi>
+                <mi mathvariant="normal">e</mi>
+                <mi mathvariant="normal">n</mi>
+                <mi mathvariant="normal">e</mi>
+              </mrow>
+              <mo stretchy="false">]</mo>
+              <mo>=</mo>
+              <mn>0</mn>
+              <mo>;</mo>
+            </mtd>
+          </mtr>
+        </mtable>
+      </math>
+    </div>
+    <p>where all the notifications and kinetic data are shown in Table.2.</p>
+    <p>With SimBiology, the ODEs were then simulated under various conditions. We first performed sensitivity analysis
+      to examine the parameters (Fig.7). According to the result, except for crtE, the expression of other species is
+      less sensitive to the variation of input signal. The errors from these papameters might cause only slight
+      disturbance, regardless some kinetic data remains lacked. </p>
+    <p>The simulation result was corresponded to the control group, long-time induced group and short-time induced
+      group. The simulation for control group, which means simply lycopene synthesis, is shown in Fig.7: </p>
+    <div class="twoimg">
+      <img class="lazyload" data-src="../images/model-images/model-7-0.jpg" alt=""><img class="lazyload"
+        data-src="../images/model-images/model-7-1.jpg" alt="">
+      <h5>Fig.7 Sensitivity analysis (left) and the simulation of control group (right)</h5>
+    </div>
+    <p>Compared to long-time inducement, the short-time group achieved a more balance ratio between two products, which
+      matched well with the experiment and demonstrated the advantage of dynamic regulation: </p>
+    <div class="oneimg">
+      <img class="lazyload" data-src="../images/model-images/model-8.jpg" alt="">
+      <h5>Fig.8 The simulation of long-time induced group</h5>
+    </div>
+    <p>Hopefully, through the response to different light control conditions, the model will guide the user to optimize
+      the property of the product.</p>
+    <h3><img class="lazyload" data-src="../images/description-images/small-leaf.png" alt="">Extension for the metabolic
+      pathway</h3>
+    <p>To carry out the future work, we made an attempt to extend the model to a comprehensive scope. With more
+      complexity, the model will take various input signals into account, including the carbon source, nitrogen source
+      and other physical conditions. By combination with the genome-scale network, the model can further predict the
+      growth rate of cells accurately. Multiple methods can be merged and applied, which recently comes into a trend in
+      metabolism analysis. The combination of dynamic flux balance analysis (dFBA) with various kinds of data limited,
+      may perform well when lacking the enzymatic data, meanwhile overcoming the disadvantage of static analysis. It is
+      expected to apply these methods in our future work!</p>
+    <p>In this part, we have primarily constructed a genome-scale model with FBA method. During the construction, we
+      also gathered a lot information and our experience are documented <a
+        href="https://github.com/zhenshenxie/SCUT-CHINA/tree/wikimodel" target="_blank">here</a>. The file
+      contains a genome-scale model of Pichia pastoris, which is the modification of a previous model Imt1026 (v3.0) for
+      a better operation under multi environment, including COBRA and CellNetAnalyzer. </p>
+
+    <div class="reference">
+      <h3>References</h3>
+      <p>[1] Faraldos JA, Wu S, Chappell J, Coates RM. Doubly deuterium-labeled patchouli alcohol from cyclization of
+        singly labeled [2-(2)H(1)]farnesyl diphosphate catalyzed by recombinant patchoulol synthase. J Am Chem Soc. 2010
+        Mar 10;132(9):2998-3008. doi: 10.1021/ja909251r. </p>
+      <p>[2] National Center for Biotechnology Information (NCBI)[Internet]. Bethesda (MD): National Library of Medicine
+        (US), National Center for Biotechnology Information; [1988] - [cited 2022 Oct 04]. Available from:
+        https://www.ncbi.nlm.nih.gov/</p>
+      <p>[3] Jumper J, Evans R, Pritzel A, et al. Highly accurate protein structure prediction with AlphaFold. Nature.
+        2021;596(7873):583-589. doi:10.1038/s41586-021-03819-2</p>
+      <p>[4] The PyMOL Molecular Graphics System, Version 2.0 Schrödinger, LLC.</p>
+      <p>[5] Irwin JJ, Sterling T, Mysinger MM, Bolstad ES, Coleman RG. ZINC: a free tool to discover chemistry for
+        biology. J Chem Inf Model. 2012;52(7):1757-1768. doi:10.1021/ci3001277</p>
+      <p>[6] Morris, G. M., Huey, R., Lindstrom, W., Sanner, M. F., Belew, R. K., Goodsell, D. S. and Olson, A. J.
+        (2009) Autodock4 and AutoDockTools4: automated docking with selective receptor flexiblity. J. Computational
+        Chemistry 2009, 16: 2785-91.</p>
+      <p>[7] Trott O, Olson AJ. AutoDock Vina: improving the speed and accuracy of docking with a new scoring function,
+        efficient optimization, and multithreading. J Comput Chem. 2010;31(2):455-461. doi:10.1002/jcc.21334</p>
+      <p>[8] Takakado A, Nakasone Y, Terazima M. Sequential DNA Binding and Dimerization Processes of the Photosensory
+        Protein EL222. Biochemistry. 2018;57(10):1603-1610. doi:10.1021/acs.biochem.7b01206</p>
+    </div>
+  </article>
+
+
+  <script src="../js/jquery.js"></script>
+  <script src="../js/public.js"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</body>
+
+</html>

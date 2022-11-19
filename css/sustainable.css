@@ -1,0 +1,33 @@
+nav .container {
+  background-image: url(../images/attributions-images/hpbgc-min.png);
+}
+nav .container .pic {
+  filter: hue-rotate(300deg);
+}
+article h3 {
+  color: #00a199;
+  padding: 5px;
+}
+article img {
+  width: 100%;
+}
+article .left {
+  margin-top: 20px;
+  overflow: hidden;
+}
+article .left img {
+  float: right;
+  width: 40%;
+  margin: 0 0 20px 20px;
+  padding-top: 10px;
+}
+article .right {
+  margin-top: 20px;
+  overflow: hidden;
+}
+article .right img {
+  float: left;
+  width: 40%;
+  margin: 0 20px 20px 0;
+  padding-top: 10px;
+}

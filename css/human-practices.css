@@ -1,0 +1,303 @@
+nav .container {
+  background-image: url(../images/attributions-images/hpbgc-min.png);
+}
+nav .container .pic {
+  font-size: 30px;
+  padding-top: 88px;
+  line-height: 50px;
+  filter: hue-rotate(100deg);
+}
+.steps {
+  position: fixed;
+  width: 15vw;
+  top: 35%;
+  left: 0;
+  z-index: 10;
+  padding-left: 5px;
+  transition: 1s;
+  opacity: 0;
+  cursor: pointer;
+}
+.steps h4 {
+  font-size: 1vw;
+  line-height: 30px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-weight: normal;
+  color: #9e9e9f;
+}
+.steps h4:hover {
+  font-weight: bold !important;
+  color: #000000 !important;
+}
+body {
+  width: 100%;
+  overflow-x: hidden !important;
+}
+article {
+  margin: -100px 10vw 100px 15vw;
+}
+article .iframe0,
+article .iframe1,
+article .iframe2,
+article .iframe3,
+article .iframe4 {
+  display: none;
+}
+article .iframe0 {
+  display: block;
+}
+article .iframe0 .astyle {
+  color: #289cea;
+}
+article .iframe0 .astyle:hover {
+  text-decoration: underline;
+}
+article .iframe0 .significant {
+  color: #77aeac;
+  font-size: 18px;
+}
+article .iframe0 .ans div[class^="answer"] {
+  text-align: justify;
+}
+article .iframe0 .ans div[class^="answer"] img {
+  width: 30%;
+  float: right;
+  padding: 0 0 20px 20px;
+}
+article .iframe0 .ans div[class^="answer"] h3 {
+  margin-top: 30px;
+  color: #00a199;
+}
+article .iframe0 h2 {
+  margin: 50px 0 20px;
+}
+article .iframe0 h5 {
+  text-align: center;
+  font-size: 14px;
+  color: #9e9e9f;
+  font-weight: normal;
+}
+article .iframe0 .dyers .sub_dyers {
+  overflow: hidden;
+}
+article .iframe0 .dyers img {
+  width: 40%;
+  float: right;
+  padding: 5px 0 20px 20px;
+}
+article .iframe0 .dyers .smallimg {
+  padding-top: 30px;
+}
+article .iframe0 .dyers .smallimg img {
+  float: none;
+  width: 32%;
+  padding: 0 0 15px;
+}
+article .iframe0 .conclusion .res_title {
+  color: #f29c88;
+  font-weight: normal;
+}
+article .iframe0 #footer {
+  display: block;
+  margin-top: 100px;
+}
+article .iframe1 h2,
+article .iframe2 h2,
+article .iframe3 h2,
+article .iframe4 h2 {
+  line-height: 70px;
+  font-size: 26px;
+}
+article .iframe1 h3,
+article .iframe2 h3,
+article .iframe3 h3,
+article .iframe4 h3 {
+  font-size: 22px;
+  font-weight: normal;
+  margin-bottom: 40px;
+}
+article .iframe1 .leftcard {
+  background: linear-gradient(to left, #dfdedd 80%, #fff);
+  font-size: 16px;
+  line-height: 22px;
+  padding: 3%;
+  padding-left: calc(15vw + 3%);
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-top: 40px;
+  margin-left: -15vw;
+  box-shadow: 8px 8px 20px #a6a6a6;
+  transform: translateX(-125%);
+  transition: 1.5s;
+}
+article .iframe1 .leftcard::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(50%, -50%);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #dfdedd;
+}
+article .iframe1 .leftcard .left {
+  float: left;
+  width: 80%;
+}
+article .iframe1 .leftcard .left .top {
+  font-size: 22px;
+  line-height: 36px;
+  font-weight: bold;
+  vertical-align: middle;
+}
+article .iframe1 .leftcard .left .top::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 50px;
+  margin-right: 15px;
+  vertical-align: middle;
+  background-color: #7d7aed;
+}
+article .iframe1 .leftcard .left p {
+  padding: 3%;
+  padding-left: 0;
+}
+article .iframe1 .leftcard .right {
+  width: 20%;
+  height: 100%;
+}
+article .iframe1 .leftcard .right img {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+}
+article .iframe1 .rightcard {
+  background: linear-gradient(to right, #d3d4d4, #dbe1e1);
+  font-size: 16px;
+  line-height: 22px;
+  padding: 3%;
+  padding-right: calc(10vw + 3%);
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-top: 40px;
+  margin-right: -10vw;
+  box-shadow: -8px 8px 20px #a6a6a6;
+  transform: translateX(125%);
+  transition: 1.5s;
+}
+article .iframe1 .rightcard::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #d3d5d5;
+}
+article .iframe1 .rightcard .right {
+  float: left;
+  width: 80%;
+  padding-left: 3%;
+}
+article .iframe1 .rightcard .right .top {
+  font-size: 22px;
+  line-height: 36px;
+  font-weight: bold;
+  vertical-align: middle;
+}
+article .iframe1 .rightcard .right .top::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 50px;
+  margin-right: 15px;
+  vertical-align: middle;
+  background-color: #7d7aed;
+}
+article .iframe1 .rightcard .right p {
+  padding: 3% 0;
+}
+article .iframe1 .rightcard .left {
+  width: 20%;
+  height: 100%;
+}
+article .iframe1 .rightcard .left img {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+}
+article .iframe1 #lastcard .right {
+  width: 100%;
+}
+article .iframe2 .twoimg {
+  margin: -20px 0 40px;
+  padding: 0 10px;
+}
+article .iframe2 .twoimg img {
+  width: calc(50% - 10px);
+}
+article .iframe2 .twoimg img:nth-child(1) {
+  padding-right: 10px;
+}
+article .iframe2 .twoimg img:nth-child(2) {
+  padding-left: 10px;
+}
+article .iframe3 img {
+  margin: -10px 10% 40px;
+  width: 80%;
+}
+article .iframe3 .threeimg {
+  width: 70%;
+  margin: -20px auto 40px;
+}
+article .iframe3 .threeimg img {
+  margin: 0;
+}
+article .iframe3 .threeimg img:first-child {
+  border: 1px solid #000;
+}
+article .iframe3 .threeimg img:nth-child(2n+1) {
+  width: 55.6%;
+}
+article .iframe3 .threeimg img:nth-child(2n) {
+  width: 42.4%;
+  margin-left: 2%;
+}
+article .iframe4 em {
+  font-weight: bold;
+}
+article .iframe4 table {
+  margin: 0 auto 40px;
+  border-collapse: separate;
+  border-spacing: 0;
+  border-top: 2px solid #000;
+  border-left: 2px solid #000;
+}
+article .iframe4 table td {
+  text-align: center;
+  padding: 5px;
+  border-right: 2px solid #000;
+  border-bottom: 2px solid #000;
+  font-size: 12px;
+  line-height: 20px;
+}
+article .iframe4 table td:nth-child(1) {
+  background-color: #e7e7e7;
+}
+article .iframe4 table #first_tr td {
+  background-color: #e7e7e7;
+}
+article .iframe4 a {
+  color: #3d8ef2;
+}
+article .iframe4 a:hover {
+  text-decoration: underline;
+}

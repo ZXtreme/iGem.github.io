@@ -1,0 +1,61 @@
+nav .container {
+  background-image: url(../images/attributions-images/attbgc.jpg);
+}
+nav .container .pic {
+  font-size: 30px;
+  padding-top: 88px;
+  line-height: 50px;
+  filter: hue-rotate(140deg);
+}
+nav .container::after {
+  content: "";
+  display: inline-block;
+  width: 0%;
+  height: 0%;
+  background-color: rgba(176, 208, 211, 0.5);
+}
+article {
+  padding: 20px 0 100px;
+}
+article a {
+  color: #007bff;
+}
+article a:hover {
+  text-decoration: underline;
+}
+article .judgingBox {
+  text-align: center;
+}
+article .judgingBox a {
+  display: inline-block;
+  padding: 20px 40px;
+  border-radius: 20px;
+  color: #ccaaa5;
+  border: 2px solid #ccaaa5;
+}
+article h2 {
+  text-align: center;
+  line-height: 36px;
+  margin: 60px 0 20px;
+}
+article .criteria table {
+  width: 80%;
+  margin: 0 auto;
+  border-collapse: separate;
+  border-spacing: 0;
+  border-top: 2px solid #000;
+  border-left: 2px solid #000;
+  font-size: 16px;
+}
+article .criteria td:nth-child(1) {
+  background-color: #e0dfdf;
+}
+article .criteria tr:nth-child(1) td {
+  background-color: #d1d1d2;
+}
+article .criteria td {
+  text-align: center;
+  padding: 2px 5px;
+  border-right: 2px solid #000;
+  border-bottom: 2px solid #000;
+}

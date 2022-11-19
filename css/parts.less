@@ -1,0 +1,77 @@
+nav {
+  .container {
+    background-image: url(../images/attributions-images/projectbgc-min.png);
+
+    .pic {
+      filter: hue-rotate(220deg);
+    }
+  }
+}
+
+article {
+  h2 {
+    margin: 10px 0 30px;
+  }
+
+  p {
+    padding-left: 35px;
+    position: relative;
+
+    span {
+      position: absolute;
+      top: 3px;
+      left: 0px;
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+      background-color: rgb(158, 204, 185);
+      border-radius: 50%;
+
+      &::after {
+        content: "";
+        position: absolute;
+        width: 14px;
+        height: 14px;
+        top: 1.5px;
+        left: -2px;
+        border-radius: 50%;
+        border: 5px solid #fff;
+      }
+    }
+  }
+
+
+
+  a {
+    color: rgb(99, 166, 246);
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  table {
+    margin: 30px auto 40px;
+    border-collapse: separate;
+    border-spacing: 0;
+    border-top: 2px solid #000;
+    border-left: 2px solid #000;
+    width: 80%;
+
+    tr:first-child {
+      td {
+        font-weight: bold;
+        background-color: rgb(255, 255, 204);
+      }
+    }
+
+    td {
+      text-align: center;
+      padding: 5px;
+      border-right: 2px solid #000;
+      border-bottom: 2px solid #000;
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+}

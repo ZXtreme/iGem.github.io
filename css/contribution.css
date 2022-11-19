@@ -1,0 +1,98 @@
+@keyframes smallrain {
+  from {
+    top: -30%;
+    opacity: 1;
+  }
+  70% {
+    top: 0;
+    opacity: 1;
+  }
+  to {
+    top: 0;
+    opacity: 0;
+  }
+}
+nav .container {
+  background-image: url(../images/attributions-images/projectbgc-min.png);
+}
+nav .container .pic {
+  filter: hue-rotate(40deg);
+}
+article {
+  padding: 20px 0 100px;
+  font-size: 22px;
+  line-height: 36px;
+  text-align: justify;
+  font-family: 'Arial';
+}
+article .pink {
+  display: inline-block;
+  background-color: #f4dcd6;
+  color: #6f4f47;
+  padding: 15px;
+  border-radius: 10px;
+}
+article sub,
+article sup {
+  font-size: 12px;
+}
+article sub {
+  font-style: italic;
+}
+article h2 {
+  margin: 40px 0 0;
+}
+article p,
+article h4 {
+  margin-top: 20px;
+}
+article h4 {
+  color: #6a5149;
+}
+article h5 {
+  font-weight: normal;
+  text-align: center;
+  font-size: 12px;
+  color: #918f8f;
+}
+article .wet #fluorescence {
+  display: block;
+  width: 55%;
+  margin: 10px auto 0;
+}
+article .wet table {
+  margin: 10px auto 40px;
+  border-collapse: separate;
+  border-spacing: 0;
+  border-top: 2px solid #000;
+  border-left: 2px solid #000;
+}
+article .wet table tr:first-child td {
+  background-color: #f5f6c8;
+}
+article .wet table td {
+  text-align: center;
+  padding: 5px;
+  border-right: 2px solid #000;
+  border-bottom: 2px solid #000;
+  font-size: 16px;
+  line-height: 20px;
+}
+article .wet #table2 tr:nth-child(2) td {
+  padding: 15px 20px;
+}
+article .wet .xlsx {
+  margin: 10px 0 -15px;
+  text-align: center;
+}
+article .wet .xlsx img {
+  width: 100px;
+}
+article .wet .math {
+  text-align: center;
+}
+article .reference p {
+  margin-top: 3px;
+  font-size: 18px;
+  line-height: 30px;
+}

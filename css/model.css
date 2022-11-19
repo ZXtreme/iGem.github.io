@@ -1,0 +1,96 @@
+nav .container {
+  background-image: url(../images/attributions-images/labbgc-min.png);
+}
+nav .container .pic {
+  filter: hue-rotate(160deg);
+}
+article p {
+  margin-top: 20px;
+}
+article h2 {
+  margin: 30px 0 0;
+  display: inline-block;
+  line-height: calc(320px / 522 * 73);
+  background-image: url(../images/implementation-images/title.png);
+  background-size: 100% calc(320px / 522 * 73);
+  min-width: 320px;
+  margin-left: -23px;
+  padding-left: 33px;
+  padding-right: 33px;
+}
+article h3 {
+  margin-top: 20px;
+  font-weight: normal;
+}
+article h3 img {
+  margin-right: 5px;
+  width: 28px;
+  vertical-align: middle;
+}
+article h5 {
+  width: 80%;
+  margin: 10px auto;
+  text-align: center;
+  font-size: 14px;
+  line-height: 20px;
+  color: #9e9e9f;
+  font-weight: normal;
+}
+article a {
+  color: #3d8ef2;
+}
+article a:hover {
+  text-decoration: underline;
+}
+article sup,
+article sub {
+  font-size: 12px;
+}
+article .oneimg img {
+  display: block;
+  margin: 15px auto 5px;
+  width: 50%;
+}
+article .twoimg img {
+  width: 47%;
+  padding: 1% 5% 8px;
+  vertical-align: middle;
+}
+article .twoimg img:nth-child(2) {
+  width: 53%;
+}
+article table {
+  margin: 20px auto 10px;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+article table td,
+article table th {
+  text-align: center;
+  padding: 5px;
+  font-size: 16px;
+  line-height: 20px;
+}
+article table tr :first-child {
+  font-family: 'Times New Roman';
+}
+article table tr:first-child th {
+  background-color: #f2f2f2;
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+}
+article table tr:last-child td {
+  border-bottom: 2px solid #000;
+}
+article .math0 {
+  font-size: 12px;
+}
+article .reference {
+  margin-top: 100px;
+  line-height: 28px;
+  margin-bottom: 10px;
+}
+article .reference p {
+  font-size: 16px;
+  margin-top: 0;
+}

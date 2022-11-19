@@ -1,0 +1,59 @@
+nav .container {
+  background-image: url(../images/attributions-images/projectbgc-min.png);
+}
+nav .container .pic {
+  filter: hue-rotate(220deg);
+}
+article h2 {
+  margin: 10px 0 30px;
+}
+article p {
+  padding-left: 35px;
+  position: relative;
+}
+article p span {
+  position: absolute;
+  top: 3px;
+  left: 0px;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-color: #9eccb9;
+  border-radius: 50%;
+}
+article p span::after {
+  content: "";
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  top: 1.5px;
+  left: -2px;
+  border-radius: 50%;
+  border: 5px solid #fff;
+}
+article a {
+  color: #63a6f6;
+}
+article a:hover {
+  text-decoration: underline;
+}
+article table {
+  margin: 30px auto 40px;
+  border-collapse: separate;
+  border-spacing: 0;
+  border-top: 2px solid #000;
+  border-left: 2px solid #000;
+  width: 80%;
+}
+article table tr:first-child td {
+  font-weight: bold;
+  background-color: #ffffcc;
+}
+article table td {
+  text-align: center;
+  padding: 5px;
+  border-right: 2px solid #000;
+  border-bottom: 2px solid #000;
+  font-size: 16px;
+  line-height: 20px;
+}

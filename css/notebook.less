@@ -1,0 +1,210 @@
+nav {
+  .container {
+    background-image: url(../images/attributions-images/projectbgc-min.png);
+
+    .pic {
+      filter: hue-rotate(180deg);
+    }
+  }
+}
+
+article {
+  margin-top: -60px;
+
+  a {
+    color: rgb(101, 165, 244);
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  sub,
+  sup {
+    font-size: 12px;
+  }
+
+  .month {
+    margin-top: 130px;
+    height: 100px;
+    position: relative;
+
+    p {
+      text-align: center;
+      line-height: 100px;
+      user-select: none;
+      font-weight: bold;
+      color: rgb(110, 150, 148);
+      font-size: 32px;
+    }
+
+    .red {
+      height: 80%;
+      width: 10%;
+      border: 2px solid rgb(172, 206, 209);
+      background-color: rgb(231, 204, 187);
+      border-radius: 13px;
+    }
+
+    .green {
+      height: 50%;
+      width: 20%;
+      border: 2px solid rgb(172, 206, 209);
+      background-color: rgb(175, 223, 221);
+      border-radius: 13px;
+      opacity: .7;
+    }
+
+    .blue {
+      height: 27%;
+      width: 60%;
+      background: linear-gradient(to right, rgba(163, 201, 215, .5), rgb(255, 255, 255));
+    }
+
+    .left {
+      div {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+      }
+
+      .blue {
+        border-top-left-radius: 13px;
+        border-bottom-left-radius: 13px;
+        border-top: 2px solid rgb(172, 206, 209);
+      }
+    }
+
+    .right {
+      div {
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+
+      .blue {
+        background: linear-gradient(to left, rgba(163, 201, 215, .5), rgb(255, 255, 255));
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        border-bottom: 2px solid rgb(172, 206, 209);
+      }
+    }
+  }
+
+  .tab {
+    position: relative;
+    overflow-x: auto;
+    transition: all 1s ease;
+
+    &::-webkit-scrollbar {
+      height: 10px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: rgb(229, 135, 122);
+      border-radius: 10px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: white;
+      border: 2px solid rgb(249, 116, 103);
+      border-radius: 10px;
+    }
+
+    .tabcontain {
+      width: 2280px;
+      padding-top: 20px;
+      height: 105px;
+    }
+
+    .tab-green {
+      position: absolute;
+      z-index: 3;
+      top: 20px;
+      height: 12px;
+      width: 2280px;
+      background-color: rgba(199, 255, 228, 1);
+
+      &:nth-child(3) {
+        top: 44px;
+      }
+    }
+
+    .tab-blue {
+      position: absolute;
+      z-index: 3;
+      top: 32px;
+      height: 12px;
+      width: 2280px;
+      background-color: rgba(174, 209, 209, 1);
+    }
+
+    .tab-month {
+      float: left;
+      position: relative;
+      background-color: rgb(231, 204, 187);
+      height: 80px;
+      padding-top: 44px;
+      width: 150px;
+      margin-left: 20px;
+      margin-right: 20px;
+      border-bottom-left-radius: 25px;
+      border-bottom-right-radius: 25px;
+      text-align: center;
+      font-size: 22px;
+      color: rgb(86, 109, 109);
+      border: 2px solid rgb(190, 218, 218);
+
+      .bigcircle {
+        position: absolute;
+        z-index: 10;
+        width: 60px;
+        height: 60px;
+        background-color: #fff;
+        border-radius: 50%;
+        top: -12px;
+        left: 50%;
+        transform: translateX(-50%);
+
+        &:hover {
+          filter: hue-rotate(120deg);
+        }
+
+        .smallcircle {
+          position: absolute;
+          top: 7px;
+          left: 7px;
+          right: 7px;
+          bottom: 7px;
+          border-radius: 50%;
+          border: 6px solid rgb(174, 209, 209);
+
+          img {
+            position: absolute;
+            z-index: 100;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 50%;
+            width: 36px;
+          }
+        }
+
+        .white {
+          position: absolute;
+          width: 12px;
+          height: 48px;
+          background-color: #fff;
+          left: 50%;
+          top: 6px;
+          z-index: 20;
+          transform: translateX(-50%);
+        }
+      }
+    }
+  }
+
+  h3 {
+    margin-top: 30px;
+  }
+}

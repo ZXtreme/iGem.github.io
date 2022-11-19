@@ -1,0 +1,136 @@
+nav .container {
+  height: 500px;
+  width: 100%;
+  position: relative;
+  background-image: url(../images/member-images/members_allpic.jpg);
+  background-size: 100% 100%;
+}
+nav .container .title {
+  position: absolute;
+  left: 50%;
+  bottom: 3%;
+  font-size: 30px;
+  color: white;
+  transform: translate(-50%, -50%) translateZ(-100px);
+}
+.steps {
+  position: fixed;
+  z-index: 10;
+  width: 15vw;
+  top: 35%;
+  left: 0;
+  padding-left: 15px;
+  transition: 1s;
+  opacity: 0;
+  cursor: pointer;
+}
+.steps h4 {
+  font-size: 1vw;
+  line-height: 30px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-weight: normal;
+  color: #9e9e9f;
+}
+.steps h4:hover {
+  font-weight: bold !important;
+  color: #000000 !important;
+}
+article {
+  margin: 60px 10vw 100px 15vw;
+  position: relative;
+  z-index: 3;
+  font-size: 22px;
+  line-height: 36px;
+  text-align: justify;
+  font-family: 'Arial';
+}
+article .iframe0,
+article .iframe1,
+article .iframe2,
+article .iframe3 {
+  display: none;
+}
+article h2 {
+  margin-top: 40px;
+}
+article p {
+  margin-top: 30px;
+}
+article sub,
+article sup {
+  font-size: 12px;
+}
+article h5 {
+  margin-top: 10px;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: normal;
+  color: #595757;
+  text-align: center;
+}
+article .oneimg img {
+  display: block;
+  margin: 20px auto 0;
+  width: 50%;
+}
+article .twoimg img {
+  width: 50%;
+  padding: 5% 5% 8px;
+  vertical-align: middle;
+}
+article .threeimg img {
+  padding: 5%;
+  width: 33.33%;
+  vertical-align: middle;
+}
+article .iframe0 {
+  display: block;
+  padding-bottom: 200px;
+}
+article .iframe1 a {
+  color: #3d90f4;
+}
+article .iframe1 a:hover {
+  text-decoration: underline;
+}
+article .iframe3 h3 {
+  margin-top: 30px;
+}
+article .iframe3 .zero-one {
+  padding-top: 50px;
+  overflow: hidden;
+}
+article .iframe3 .zero-one p {
+  margin-top: 15px;
+}
+article .iframe3 .zero-one .right-one {
+  float: right;
+  width: 35%;
+  margin-left: 10px;
+}
+article .iframe3 .zero-one .right-one img {
+  width: 100%;
+  padding: 20px 20px 0 30px;
+}
+article .iframe3 .one-two {
+  width: 80%;
+  margin: 15px auto 0;
+}
+article .iframe3 .one-two .left {
+  display: inline-block;
+  width: 45%;
+}
+article .iframe3 .one-two .left img {
+  width: 100%;
+}
+article .iframe3 .one-two .right {
+  display: inline-block;
+  width: 55%;
+}
+article .iframe3 .one-two .right img {
+  display: block;
+  padding-left: 1%;
+  width: 100%;
+}

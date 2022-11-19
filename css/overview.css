@@ -1,0 +1,24 @@
+nav .container {
+  background-image: url(../images/attributions-images/hpbgc-min.png);
+}
+nav .container .pic {
+  filter: hue-rotate(200deg);
+}
+article h2 {
+  line-height: 70px;
+  font-size: 26px;
+}
+article h3 {
+  font-size: 22px;
+  font-weight: normal;
+  margin-bottom: 40px;
+}
+article .flower {
+  margin: 0 -10vw 70px;
+  padding: 70px 10vw;
+  background-color: #42505d;
+  text-align: center;
+}
+article .flower img {
+  width: 60%;
+}
