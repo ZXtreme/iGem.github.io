@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function(e) {
     //存放图片路径的数组
     var imgSrcArr = [
-        '../images/main-images/bgc.png'
+        './images/main-images/bgc.png'
     ];
 
     var imgWrap = [];
