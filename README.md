@@ -82,5 +82,6 @@
 ├─ fonts      使用的字体文件
 ├─ html       各页面的html文件
 ├─ images     各页面使用到的图片
-└─ js         各页面的js文件
+├─ js         各页面的js文件
+└─ server     服务器的搭建
 ```
